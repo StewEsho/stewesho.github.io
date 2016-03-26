@@ -1,9 +1,35 @@
+//////////////////////////////////////////////////////////////////
+// VARIABLES
+//////////////////////////////////////////////////////////////////
+
+//Media Queries
 $break-small: 320px;
+//Colours
+$nice-red: rgb(255, 86, 78);
+
+//////////////////////////////////////////////////////////////////
+// MIXINS
+//////////////////////////////////////////////////////////////////
+
+@mixin staggered-gradient($colour){
+  background-image:
+    linear-gradient(left,
+      lighten($colour, 15%) 10px,
+      $colour 11px,
+      $colour 20px,
+      darken($colour, 15%) 21px,
+      darken($colour, 15%) 30px,
+      transparent 31px
+    );
+}
+
+//////////////////////////////////////////////////////////////////
+// FORMATTING
+//////////////////////////////////////////////////////////////////
 
 .title{
   font-family: "Bitter", serif;
   font-size: 6.5em;
-  transform: rotate(3deg);
   padding: 0.25em;
   text-align: center;
   @media screen and (max-width: $break-small) {
@@ -11,16 +37,22 @@ $break-small: 320px;
   }
 }
 
+#title-1{
+  transform: rotate(3deg);
+}
+
 #title-2{
   padding-top: 0.25em;
+  transform: rotate(-6deg);
 }
 
 #title-3{
   padding-top: 0.5em;
   padding-bottom: 0.25em;
+  transform: rotate(6deg)
 }
 
 #header{
   width: 100%;
-  background-color: #55CEFF;
+  @include staggered-gradient($nice-red);
 }
