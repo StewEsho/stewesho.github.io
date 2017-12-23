@@ -379,7 +379,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
-  background: #fefefe;
+  background-color: #4b3f3f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1210,7 +1210,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family:"Courier New", monospace;
   font-weight: normal;
   font-style: normal;
   color: inherit;
