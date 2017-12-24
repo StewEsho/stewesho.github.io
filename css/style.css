@@ -1,5 +1,6 @@
 #page {
 	background-color: #d6cbb6;
+  border-top: 6px solid #E55B54;
 }
 
 body {
@@ -15,13 +16,16 @@ body {
   background: -webkit-linear-gradient(#eee, #333);
 	color: #BF423C;
   -webkit-background-clip: text;
- 	} @media screen and (max-width: 320px) {
-    .title {
-      font-size: 12em;
-		}
+ 	}
 }
 
 #header{
+  display: flex;
+  margin-bottom: 0.8em;
+  border: : 0.2em;
+}
+
+#title-card{
   background-color: #401614;
 }
 
@@ -30,21 +34,16 @@ body {
   justify-content:center;
   align-items:center;
   text-align:center;
-  font-size: 1.5em;
+  font-size: 3em;
   color: white;
-  background-color: #7393a6;
+  background-color: /*#7393a6*/ #794519;
   height: auto;
-}
-
-#social-media .fa{
-
 }
 
 .divider {
   background-color: #E55B54;
 	display:block;
 	padding: 3px;
-
 }
 
 .textbody {
@@ -62,3 +61,26 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  #social-media {
+    font-size: 1.5em;
+  }
+
+  #header {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2em;
+  }
+
+  #social-media {
+    font-size: 1em;
+  }
+}
