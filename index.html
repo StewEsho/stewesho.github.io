@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <link href='https://fonts.googleapis.com/css?family=Poppins|Bitter:700' rel='stylesheet' type='text/css'>
@@ -12,21 +14,19 @@
     </title>
   </head>
   <body>
-    <div class="row medium-unstack" id="header">
-      <div class="columns large-8" id="title-card">
-        <h1 class="title">Stew Esho <br />
-          <small>Software Developer</small>
-        </h1>
+    <div class="row medium-unstack" id="header" data-equalizer data-equalize-on="large">
+      <div class="columns small-12 large-9" id="title-card" data-equalizer-watch>
+        <h1 class="title">Stew Esho <small>Software Developer</small></h1>
       </div>
-      <div class="columns large-4" id="social-media">
-          <ul class="no-bullet">
-            <li>
-              <i class="fa fa-github-square" aria-hidden="true"> GitHub</i>
-            </li>
-            <li>
+      <div class="columns small-12 large-3" id="social-media" data-equalizer-watch>
+          <div class="row" >
+            <a class="columns large-12 small-6" >
+              <i class="fa fa-github-square"> GitHub</i>
+            </a>
+            <a class="columns large-12 small-6" >
               <i class="fa fa-linkedin-square"> LinkedIn</i>
-            </li>
-          <ul/>
+            </a>
+          </div>
       </div>
     </div>
 		<div class="row" id="page">
@@ -41,5 +41,12 @@
 				<img src = "img/stew.jpg" id = "personal-photo"/>
 			</div>
 		</div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
