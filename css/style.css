@@ -1,25 +1,27 @@
 #page {
-	/* background-color: #d6cbb6; */
   color: white;
-  border-top: 6px solid #E55B54;
 }
 
 .title {
   font-family: "Bitter", sans-serif;
-  font-size: 3em;
+  /* font-size: 3em; */
 	font-weight: 700;
-  padding: 0.25em;
+  /* padding: 0.25em; */
   text-align: center;
   background: -webkit-linear-gradient(#eee, #333);
-	color: #BF423C;
+	color: #D0716C;
   -webkit-background-clip: text;
  	}
 }
 
+.subtitle {
+  color: #e6e6e6;
+}
+
 #header{
   display: flex;
+  border-bottom: 6px solid #E55B54;
   margin-bottom: 0.8em;
-  border: 0.2em;
 }
 
 #title-card{
@@ -32,17 +34,17 @@
   align-items:center;
   text-align:center;
   font-size: 1.7em;
-  color: white;
   background-color: /*#7393a6*/ #794519;
   height: auto;
 }
 
 .media-link{
-  color: white;
+  color: #401614;
 }
 
 .media-link:hover{
-  color: #aaaaaa;
+  color: #401614;
+  text-shadow: 0px 1px #565656;
 }
 
 #social-media > div{

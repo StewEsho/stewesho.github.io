@@ -177,7 +177,7 @@ mark {
      * Add the correct font size in all browsers.
      */
 small {
-  font-size: 80%; }
+  font-size: 60%; }
 
 /**
      * Prevent `sub` and `sup` elements from affecting the line height in
@@ -534,7 +534,7 @@ textarea {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  }
+  max-width: 75rem;}
 
 .row {
   margin-left: auto;
@@ -5134,7 +5134,7 @@ a.thumbnail {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 0.5rem;
+  padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .top-bar,
