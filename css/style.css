@@ -1,5 +1,7 @@
-#page {
+#page{
   color: white;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 
 .title {
@@ -11,11 +13,11 @@
   background: -webkit-linear-gradient(#eee, #333);
 	color: #D0716C;
   -webkit-background-clip: text;
- 	}
 }
 
-.subtitle {
-  color: #e6e6e6;
+.sub-title {
+  color: #e3e3e3 !important;
+  margin-left: 0 !important;
 }
 
 #header{
