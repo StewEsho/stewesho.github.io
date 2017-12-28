@@ -8,7 +8,6 @@
   color: #122C34;
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
 	font-weight: 400;
-  margin-top: 0.8em;
 }
 
 .title {
@@ -26,6 +25,8 @@
 .sub-title {
   color: #113c7a !important;
   margin-left: 0 !important;
+  text-align: left;
+  width: auto;
 }
 
 #header{
@@ -47,7 +48,7 @@
   height: auto;
 }
 
-.link{
+.link, .link:active, .link:visited{
   color: #DBEAFC;
 }
 
@@ -55,13 +56,14 @@
   font-weight: normal;
 }
 
-.hook.link:active{
-  font-weight: bolder;
+.hook.link.active{
+  background-color: #113c7a
 }
 
 .link:hover{
   color: #DBEAFC;
   text-shadow: 0px 1px #121212;
+  text-decoration: none;
 }
 
 #social-media > div{
@@ -70,7 +72,7 @@
 
 .textbody {
 	padding: 6px 32px 0px 32px;
-	font-size: 0.9em;
+	font-size: 1.3em;
 	font-weight: 300;
 	margin: 0;
 	text-align: left;
@@ -84,6 +86,8 @@
   margin-right: auto;
 	text-align: center;
 	margin: : 0.75em;
+  -webkit-clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
+  clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
 }
 
 @media screen and (max-width: 1024px) {
