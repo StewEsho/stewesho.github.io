@@ -1,7 +1,14 @@
+/*  $bg-dark: #122C34;
+    $deep-blue: #224870;
+    $light-blue: #507DBC;
+    $bg-light: #DBEAFC;
+    $accent:  #15DB1F*/
+
 #page{
-  color: white;
+  color: #122C34;
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
 	font-weight: 400;
+  margin-top: 0.8em;
 }
 
 .title {
@@ -11,23 +18,21 @@
   /* padding: 0.25em; */
   text-align: center;
   background: -webkit-linear-gradient(#eee, #333);
-	color: #D0716C;
+	color: #122C34;
   -webkit-background-clip: text;
 }
 
 .sub-title {
-  color: #e3e3e3 !important;
+  color: #113c7a !important;
   margin-left: 0 !important;
 }
 
 #header{
   display: flex;
-  border-bottom: 6px solid #E55B54;
-  margin-bottom: 0.8em;
 }
 
 #title-card{
-  background-color: #401614;
+  /* background-color: #122C34; */
 }
 
 #social-media{
@@ -36,27 +41,20 @@
   align-items:center;
   text-align:center;
   font-size: 1.7em;
-  background-color: /*#7393a6*/ #794519;
   height: auto;
 }
 
 .media-link{
-  color: #401614;
+  color: #DBEAFC;
 }
 
 .media-link:hover{
-  color: #401614;
-  text-shadow: 0px 1px #565656;
+  color: #DBEAFC;
+  text-shadow: 0px 1px #121212;
 }
 
 #social-media > div{
   width: 100%;
-}
-
-.divider {
-  background-color: #E55B54;
-	display:block;
-	padding: 3px;
 }
 
 .textbody {
@@ -64,36 +62,59 @@
 	font-size: 0.9em;
 	font-weight: 300;
 	margin: 0;
-	text-align: center;
+	text-align: left;
 }
 
 #personal-photo{
-	width: 256px;
+	max-width: 256px;
+  width: auto;
 	height: auto;
-	padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+	padding: 0.75em;
 }
 
-/*# sourceMappingURL=style.css.map */
 @media screen and (max-width: 1024px) {
   .title {
-    font-size: 2.5em;
+    font-size: 1.75em;
   }
 
-  #social-media {
-    font-size: 1.5em;
+  .media-link{
+    font-size: 1em;
   }
 
-  #header {
-    padding: 0px;
+  #personal-photo{
+  	max-width: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .title {
+    font-size: 1.4em;
+  }
+
+  .media-link{
+    font-size: 0.75em;
+  }
+
+  .sub-title{
+    font-size:
   }
 }
 
 @media screen and (max-width: 480px) {
   .title {
-    font-size: 2em;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 1.25em;
   }
 
   #social-media {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }

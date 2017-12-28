@@ -443,7 +443,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #4b3f3f;
+  background: #DBEAFC;
   font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
@@ -2243,7 +2243,7 @@ h6, .h6 {
   h5 small, .h5 small,
   h6 small, .h6 small {
     line-height: 0;
-    color: #cacaca; }
+    color: #ececec; }
 
 h1, .h1 {
   font-size: 1.5rem;
@@ -5139,7 +5139,7 @@ a.thumbnail {
       flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #507DBC; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
