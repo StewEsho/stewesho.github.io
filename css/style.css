@@ -13,12 +13,13 @@
 
 .title {
   font-family: "Bitter", sans-serif;
+  margin-left: 0 !important;
   /* font-size: 3em; */
 	font-weight: 700;
   /* padding: 0.25em; */
   text-align: center;
   background: -webkit-linear-gradient(#eee, #333);
-	color: #122C34;
+	color: #113c7a;
   -webkit-background-clip: text;
 }
 
@@ -29,6 +30,8 @@
 
 #header{
   display: flex;
+  border-bottom: 0.33em solid #113c7a;
+  background-color: #3f84e4;
 }
 
 #title-card{
@@ -44,11 +47,19 @@
   height: auto;
 }
 
-.media-link{
+.link{
   color: #DBEAFC;
 }
 
-.media-link:hover{
+.hook.link{
+  font-weight: normal;
+}
+
+.hook.link:active{
+  font-weight: bolder;
+}
+
+.link:hover{
   color: #DBEAFC;
   text-shadow: 0px 1px #121212;
 }
@@ -66,40 +77,40 @@
 }
 
 #personal-photo{
-	max-width: 256px;
+	max-height: 320px;
   width: auto;
 	height: auto;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
-	padding: 0.75em;
+	margin: : 0.75em;
 }
 
 @media screen and (max-width: 1024px) {
   .title {
-    font-size: 1.75em;
+    font-size: 3em;
   }
 
-  .media-link{
+  .link{
     font-size: 1em;
-  }
-
-  #personal-photo{
-  	max-width: auto;
   }
 }
 
 @media screen and (max-width: 720px) {
   .title {
-    font-size: 1.4em;
+    font-size: 2em;
   }
 
-  .media-link{
+  .link{
     font-size: 0.75em;
   }
 
   .sub-title{
-    font-size:
+    font-size: 1.25em
+  }
+
+  #personal-photo{
+  	max-width: 180px;
   }
 }
 

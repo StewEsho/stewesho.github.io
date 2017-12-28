@@ -534,7 +534,13 @@ textarea {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+  width: 80vw;
   max-width: 75rem;}
+  @media screen and (max-width: 1024px){
+  .grid-x {
+    max-width: 80vw;
+  }
+}
 
 .row *{
   margin-left: auto;
@@ -2243,7 +2249,7 @@ h6, .h6 {
   h5 small, .h5 small,
   h6 small, .h6 small {
     line-height: 0;
-    color: #ececec; }
+    color: #3f84e4; }
 
 h1, .h1 {
   font-size: 1.5rem;
@@ -2283,7 +2289,7 @@ h6, .h6 {
 
 @media print, screen and (min-width: 40em) {
   h1, .h1 {
-    font-size: 3rem; }
+    font-size: 3.5rem; }
   h2, .h2 {
     font-size: 2.5rem; }
   h3, .h3 {
@@ -5139,7 +5145,7 @@ a.thumbnail {
       flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #507DBC; }
+     }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
