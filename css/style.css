@@ -42,12 +42,23 @@
   justify-content:center;
   align-items:center;
   text-align:center;
-  font-size: 1.7em;
+  font-size: 1.25em;
   height: auto;
+  width: auto;
+} #social-media li:hover {
+  background-color: #113c7a;
+} #social-media li a {
+  width: 100%;
+  height: 100%;
+  padding: none;
+  margin: none;
+  color: #113c7a;
+} #social-media li a:hover {
+  color: #dbeafc;
 }
 
 .link, .link:active, .link:visited{
-  color: #DBEAFC;
+  color: #dbeafc;
 }
 
 .hook.link{
