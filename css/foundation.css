@@ -177,7 +177,8 @@ mark {
      * Add the correct font size in all browsers.
      */
 small {
-  font-size: 60%; }
+  font-size: 60%;
+  font-weight: normal;}
 
 /**
      * Prevent `sub` and `sup` elements from affecting the line height in
@@ -691,12 +692,12 @@ textarea {
   height: auto; }
 
 .grid-margin-x {
-  margin-left: -0.625rem;
-  margin-right: -0.625rem; }
+  margin-left: auto;
+  margin-right: auto; }
   @media print, screen and (min-width: 40em) {
     .grid-margin-x {
-      margin-left: -0.9375rem;
-      margin-right: -0.9375rem; } }
+      margin-left: auto;
+      margin-right: auto; } }
   .grid-margin-x > .cell {
     width: calc(100% - 1.25rem);
     margin-left: 0.625rem;
@@ -4728,7 +4729,7 @@ html.is-reveal-open body {
 
 .sticky {
   position: relative;
-  z-index: 0;
+  z-index: 10;
   transform: translate3d(0, 0, 0); }
 
 .sticky.is-stuck {
