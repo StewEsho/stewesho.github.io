@@ -11,32 +11,30 @@
 }
 
 .title {
-  font-family: "Bitter", sans-serif;
+  font-family: "Raleway", Verdana, sans-serif;
   margin-left: 0 !important;
-  /* font-size: 3em; */
-	font-weight: 700;
-  /* padding: 0.25em; */
+	font-weight: 900;
   text-align: center;
   background: -webkit-linear-gradient(#eee, #333);
 	color: #113c7a;
   -webkit-background-clip: text;
 }
 
-.sub-title {
-  color: #113c7a !important;
+.sub {
+  font-family: "Raleway", Verdana, sans-serif;
   margin-left: 0 !important;
   text-align: left;
   width: auto;
+  font-weight: 900;
+  background-color: #113c7a;
+  color: ghostwhite;
+  padding: 0 0.4em 0.05em 3em;
 }
 
 #header{
   display: flex;
   border-bottom: 0.33em solid #113c7a;
   background-color: #3f84e4;
-}
-
-#title-card{
-  /* background-color: #122C34; */
 }
 
 #social-media{
@@ -53,7 +51,7 @@
 }
 
 .hook.link{
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .hook.link.active{
@@ -78,7 +76,7 @@
 	text-align: left;
 }
 
-#personal-photo{
+#personal-photo {
 	max-height: 320px;
   width: auto;
 	height: auto;
@@ -90,6 +88,48 @@
   clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
 }
 
+.portfolio {
+  min-height: 128px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.project-name {
+  font-size: 1.5em;
+  color: ghostwhite;
+  padding: 0 0.25em 0.05em 1em;
+  font-family: "Work Sans", Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.25em;
+  background-color: #3f84e4;
+}
+
+.overlay-cover {
+  background-color: #224870;
+  color: #fefefe;
+  display: inline;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+  transition: all 100ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding-top: 32px;
+  font-size: 3.5em;
+} .overlay-cover:hover {
+  opacity:0.7;
+}
+
+.caption {
+  text-align: center;
+  font-size: 110%;
+  color: #224870;
+}
+
 @media screen and (max-width: 1024px) {
   .title {
     font-size: 3em;
@@ -97,6 +137,10 @@
 
   .link{
     font-size: 1em;
+  }
+
+  .textbody {
+  	font-size: 0.8em;
   }
 }
 
@@ -109,7 +153,7 @@
     font-size: 0.75em;
   }
 
-  .sub-title{
+  .subtitle{
     font-size: 1.25em
   }
 

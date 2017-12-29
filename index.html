@@ -5,14 +5,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link href='https://fonts.googleapis.com/css?family=Poppins|Bitter:700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/image-hover.css" rel="stylesheet" type="text/css" />
     <link href="css/foundation.css" rel="stylesheet" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>
-      Stew Esho's Portfolio
+      Stew Esho
     </title>
   </head>
   <body>
@@ -21,8 +21,10 @@
         <div class="top-bar-left" id="title-card">
           <ul class="menu horizontal" data-magellan data-animation-easing="swing" data-offset="20" data-active-class="active">
             <li><a class="hook link" href="#about-me">About</a></li>
-            <li><a class="hook link" href="#portfolio">Portfolio</a></li>
-            <li><a class="hook link" href="#">Contact</a></li>
+            <li><a class="hook link" href="#portfolio">Projects</a></li>
+            <li><a class="hook link" href="#skills">Skills</a></li>
+            <li><a class="hook link" href="#experience">Experience</a></li>
+            <li><a class="hook link" href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="top-bar-right">
@@ -39,14 +41,14 @@
       <div class="section row" id="about-me" data-magellan-target="about-me">
         <br>
         <div class="grid-x">
-          <h1 class="title">Stew Esho <small class="subtitle">Software Developer</small></h1>
+          <h1 class="title">Stew Esho <small>Software Developer</small></h1>
         </div>
         <div class="grid-x">
     			<div class="small-12 medium-auto cell">
     				<p class="textbody">
               Hello! My name is Stew, and I am currently studying Computer Science at the University of Toronto. <br>
               <br>
-              I have been coding ever since I was a small child. Now, I work on all sorts of software projects using a breadth
+              I have been coding ever since I was a just a kid. Now I work on all sorts of software projects using a breadth
               of different tools! Here, you can find examples of some of these projects as well as a summary of all my different skills and experiences.
     				</p>
     			</div>
@@ -60,46 +62,42 @@
 
       <div class="section row" id="portfolio" data-magellan-target="portfolio">
         <div class="grid-x">
-          <h3 class="subtitle">Portfolio</h3>
+          <h3 class="sub">Projects</h3>
         </div>
-        <div class="grid-x">
-    			<div class="small-12 medium-4 cell">
-            <div class="image-hover-wrapper">
-              <span class="image-hover-wrapper-banner">Slymes</span>
-              <a href="#"><img src="https://images.pexels.com/photos/163704/bike-old-wheel-two-wheeled-vehicle-163704.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
-                <span class="image-hover-wrapper-reveal">
-                  <p>Online multiplayer arena game, similar to the popular agar.io.<br>
-                    Created using C#, Unity, and TNet.<br>
-                    Availible on Steam!<br><i class="fa fa-steam" aria-hidden="true"></i></p>
-                </span>
-              </a>
-            </div>
+        <div class="grid-x grid-margin-x">
+    			<div class="small-12 medium-6 cell"><span class="project-name">Slymes</span>
+            <a class="button expanded portfolio" style="background-image: url('img/slymes.png');" href="http://store.steampowered.com/app/530300/Slymes/">
+              <span class="overlay-cover"><i class="fa fa-steam-square"></i></span>
+            </a>
+            <p class="caption"> Online multiplayer arena game. Eat food and grow larger in this competition to become the heaviest Slyme alive!
+            <br><strong>Availible on Steam</strong></p>
     			</div>
-          <div class="small-12 medium-4 cell">
-            <div class="image-hover-wrapper">
-              <span class="image-hover-wrapper-banner">Slymes</span>
-              <a href="#"><img src="http://i0.kym-cdn.com/photos/images/original/001/203/938/517.png">
-                <span class="image-hover-wrapper-reveal">
-                  <p>Online multiplayer arena game, similar to the popular agar.io.<br>
-                    Created using C#, Unity, and TNet.<br>
-                    Availible on Steam!<br><i class="fa fa-steam" aria-hidden="true"></i></p>
-                </span>
-              </a>
-            </div>
+          <div class="small-12 medium-6 cell"><span class="project-name">Prepenol</span>
+            <a class="button expanded portfolio" style="background-image: url('img/prepenol.webp');" href="https://play.google.com/store/apps/details?id=com.stewesho.Prepenol">
+              <span class="overlay-cover"><i class="fa fa-gamepad"></i></span>
+            </a>
+            <p class="caption"> Equipped with nothing more than a little ship blaster, defeat the army and usher in a new era of harmony within the galaxy.
+            <br><strong>Availible on Google Play Store</strong></p>
     			</div>
-          <div class="small-12 medium-4 cell">
-            <div class="image-hover-wrapper">
-              <span class="image-hover-wrapper-banner">Slymes</span>
-              <a href="#"><img src="http://i0.kym-cdn.com/photos/images/original/001/203/938/517.png">
-                <span class="image-hover-wrapper-reveal">
-                  <p>Online multiplayer arena game, similar to the popular agar.io.<br>
-                    Created using C#, Unity, and TNet.<br>
-                    Availible on Steam!<br><i class="fa fa-steam" aria-hidden="true"></i></p>
-                </span>
-              </a>
-            </div>
+          <div class="small-12 medium-6 cell"><span class="project-name">Tappit</span>
+            <a class="button expanded portfolio" style="background-image: url('img/tappit.png');" href="https://play.google.com/store/apps/details?id=com.stewesho.tappit">
+              <span class="overlay-cover"><i class="fa fa-gamepad"></i></span>
+            </a>
+            <p class="caption"> Test your reflexes in this simple but fun game: tap the teleporting circle before time runs out!
+            <br><strong>Availible on Google Play Store</strong></p>
     			</div>
-        </div>
+          <div class="small-12 medium-6 cell"><span class="project-name">FIRST Robotics</span>
+            <a class="button expanded portfolio" style="background-image: url('img/frc.jpg');" href="https://github.com/KnightVision4940">
+              <span class="overlay-cover"><i class="fa fa-github-square"></i></span>
+            </a>
+            <p class="caption">Competed in the FIRST Robotics Competition for four years, programming robotic movement, control, and autonomous navigation.</p>
+    			</div>
+          <div class="small-12 medium-6 cell"><span class="project-name">Ludum Dare</span>
+            <a class="button expanded portfolio" style="background-image: url('img/ld.png');" href="https://ldjam.com/users/shockwire/games">
+              <span class="overlay-cover"><i class="fa fa-link"></i></span>
+            </a>
+            <p class="caption">Participated in the game jams Ludum Dare <strong>37</strong> and <strong>38</strong>.</p>
+    			</div>
       </div>
 
     <script src="js/vendor/jquery.js"></script>
