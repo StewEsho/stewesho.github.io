@@ -2312,6 +2312,10 @@ a {
   a img {
     border: 0; }
 
+p a{
+  text-decoration: underline;
+}
+
 hr {
   clear: both;
   max-width: 100vw;
