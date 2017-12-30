@@ -2314,12 +2314,12 @@ a {
 
 hr {
   clear: both;
-  max-width: 75rem;
-  height: 0;
+  max-width: 100vw;
+  height: 0px;
   margin: 1.25rem auto;
   border-top: 0;
   border-right: 0;
-  border-bottom: 1px solid #cacaca;
+  border-top: 3px solid #113c7a;
   border-left: 0; }
 
 ul,
@@ -2327,7 +2327,8 @@ ol,
 dl {
   margin-bottom: 1rem;
   list-style-position: outside;
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-weight: bold;}
 
 li {
   font-size: inherit; }
