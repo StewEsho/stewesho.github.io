@@ -172,6 +172,10 @@
     font-size: 1.25em
   }
 
+  #personal-photo{
+  	max-width: auto;
+  }
+
   .overlay-cover {
     opacity: 0.5;
   }
@@ -194,7 +198,11 @@
 }
 
 @media screen and (max-width: 320px) {
-  #header {
+  .title {
+    font-size: 1.25em;
+  }
+
+  #social-media {
     font-size: 0.8em;
   }
 }
