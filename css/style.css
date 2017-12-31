@@ -149,8 +149,24 @@
   color: #224870;
 }
 
-.projects {
+.caption > a{
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.skill-set > li {
+  text-align: left;
+} .skill-set > li:nth-child(odd){
   background-color: #b7cff0;
+}
+
+.return-to-top {
+  text-align: center;
+} .return-to-top > a {
+  color: #113c7a;
+} .return-to-top > a:hover {
+  color: #3770c3;
 }
 
 @media screen and (max-width: 1024px) {
