@@ -144,9 +144,13 @@
 }
 
 .caption {
-  text-align: center;
+  text-align: justify;
   font-size: 110%;
   color: #224870;
+}
+
+.projects {
+  background-color: #b7cff0;
 }
 
 @media screen and (max-width: 1024px) {
