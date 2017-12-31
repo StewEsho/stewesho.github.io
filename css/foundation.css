@@ -535,15 +535,14 @@ textarea {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  width: 80vw;
-  max-width: 75rem;}
+  max-width: 80vw;}
   @media screen and (max-width: 1024px){
   .grid-x {
     max-width: 80vw;
   }
 }
 
-.row *{
+.section *{
   margin-left: auto;
   margin-right: auto;
 }
@@ -4026,7 +4025,7 @@ select {
   line-height: 1;
   white-space: nowrap;
   cursor: default;
-  background: #1779ba;
+  background: #113c7a;
   color: #fefefe; }
   .label.primary {
     background: #1779ba;

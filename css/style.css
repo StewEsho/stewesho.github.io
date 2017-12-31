@@ -104,11 +104,15 @@
 }
 
 .portfolio {
-  min-height: 128px;
+  min-height: 128px !important;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
   position: relative;
+}
+
+.skill-badges {
+  padding: 0.15em 0 0.15em 0.5em;
 }
 
 .project-name {
