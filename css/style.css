@@ -6,7 +6,7 @@
 
 #page{
   color: #122C34;
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 }
 
@@ -118,7 +118,7 @@
 .project-name {
   color: ghostwhite;
   padding: 0 0.25em 0.05em 1em;
-  font-family: "Work Sans", Helvetica, sans-serif;
+  font-family: "Nunito", Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 1.25em;
   background-color: #3f84e4;
