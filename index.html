@@ -1,16 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600|Raleway:700,900" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/image-hover.css" rel="stylesheet" type="text/css" />
+    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>
-      Stew's Super Shack
+      Stew Esho
     </title>
   </head>
   <body>
-    <h1>
-      Stew's Super Shack
-    </h1>
-    <p>
-      The Shack is real.
-    </p>
+    <div data-sticky-container>
+      <div class="top-bar sticky" id="header" data-sticky data-options="" data-margin-top="0">
+        <div class="top-bar-left" id="title-card">
+          <ul class="menu horizontal" data-magellan data-animation-easing="swing" data-offset="20" data-active-class="active">
+            <li><a class="hook link" href="#about-me">About</a></li>
+            <li><a class="hook link" href="#portfolio">Projects</a></li>
+            <li><a class="hook link" href="#skills">Skills</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+		<div id="page">
+      <div class="section row" id="about-me" data-magellan-target="about-me">
+        <br>
+        <div class="grid-x">
+          <h1 class="title">Stew Esho <br class="show-for-small-only"/><small>Software Developer</small></h1>
+        </div>
+        <div class="grid-x">
+    			<div class="small-12 medium-auto small-order-2 medium-order-1 cell">
+    				<p class="textbody">
+              Hello! My name is Stew, and I am currently studying Computer Science at the <strong>University of Toronto</strong>. <br>
+              <br>
+              Out of a passion of computers and video games, I learned coding when I was a kid. Now I create games, apps, websites, and robotics software using a
+              wide variety of tools and languages, especially <strong>Java</strong>, <strong>Lua</strong>, and <strong>Python</strong>.
+              Scroll on down to check out what I've worked on!
+    				</p>
+            <br>
+            <ul class="menu grid-x row no-bullet" id="social-media">
+              <li class="cell auto"><a class="media link" href="https://github.com/StewEsho"><i class="fa fa-github-square"> GitHub</i></a></li>
+              <li class="cell auto"><a class="media link" href="https://www.linkedin.com/in/steward-esho/"><i class="fa fa-linkedin-square"> LinkedIn</i></a></li>
+              <li class="cell auto"><a class="media link" href="content/resume/stewesho_current_resume.pdf"><i class="fa fa-file-text"> Resume</i></a></li>
+            </ul>
+    			</div>
+    			<div class="small-12 medium-shrink small-order-1 medium-order-2 cell">
+    				<img src="img/stew.jpg" id="personal-photo" class="float-center"/>
+    			</div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="section row" id="portfolio" data-magellan-target="portfolio">
+        <div class="grid-x">
+          <h2 class="sub">Projects</h2>
+        </div>
+        <div class="grid-x grid-margin-x projects ">
+    			<div class="medium-6 cell"><span class="project-name">Slymes</span>
+            <div class="grid-x">
+              <a class="button portfolio cell medium-6" style="background-image: url('img/slymes.png');" href="http://store.steampowered.com/app/530300/Slymes/">
+                <span class="overlay-cover">Check it out on <strong>Steam</strong>!</span>
+              </a>
+              <div class="cell medium-6 cell skill-badges">
+                <ul>
+                  <li class="label">C#</li>
+                  <li class="label secondary skills">Unity Engine</li>
+                  <li class="label secondary skills">Blender</li>
+                  <li class="label secondary skills">Steamworks API</li>
+                  <li class="label secondary skills">Online networking</li>
+                </ul>
+              </div>
+            </div>
+            <p class="caption"> Online multiplayer arena game. Eat food and grow larger in this competition to become the heaviest Slyme alive!
+            <br><a href="http://store.steampowered.com/app/530300/Slymes/">Availible on Steam</a></p>
+    			</div>
+          <div class="medium-6 cell"><span class="project-name">Prepenol</span>
+            <div class="grid-x">
+              <a class="button portfolio medium-6 cell" style="background-image: url('img/prepenol.webp');" href="https://play.google.com/store/apps/details?id=com.stewesho.Prepenol">
+                <span class="overlay-cover">Try it out on the <strong>Google Play Store</strong>!</span>
+              </a>
+              <div class="medium-6 cell skill-badges">
+                <ul class="no-bullet">
+                  <li class="label">Lua</li>
+                  <li class="label secondary">Corona SDK</li>
+                </ul>
+              </div>
+            </div>
+            <p class="caption"> Equipped with nothing more than a little ship blaster, defeat the army and usher in a new era of harmony within the galaxy.
+            <br><a href="https://play.google.com/store/apps/details?id=com.stewesho.Prepenol">Availible on Google Play Store</a>
+            <br><a href="https://github.com/StewEsho/prepenol">Source Code</a></p>
+    			</div>
+          <div class="medium-6 cell"><span class="project-name">Tappit</span>
+            <div class="grid-x">
+              <a class="button portfolio medium-6 cell" style="background-image: url('img/tappit.png');" href="https://play.google.com/store/apps/details?id=com.stewesho.tappit">
+                <span class="overlay-cover">Try it out on the <strong>Google Play Store</strong>!</span>
+              </a>
+              <div class="medium-6 cell skill-badges">
+                <ul class="no-bullet">
+                  <li class="label">Lua</li>
+                  <li class="label secondary">Corona SDK</li>
+                </ul>
+              </div>
+            </div>
+            <p class="caption"> Test your reflexes in this simple but fun game: tap the teleporting circle before time runs out!
+            <br><a href="https://play.google.com/store/apps/details?id=com.stewesho.tappit">Availible on Google Play Store<a/></p>
+    			</div>
+          <div class="medium-6 cell"><span class="project-name">FIRST Robotics</span>
+            <div class="grid-x">
+              <a class="button portfolio medium-6 cell" style="background-image: url('img/frc.jpg');" href="https://github.com/KnightVision4940">
+                <span class="overlay-cover">Take a look at the source code!<br><i class="fa fa-github" aria-hidden="true"></i></span>
+              </a>
+              <div class="medium-6 cell skill-badges">
+                <ul class="no-bullet">
+                  <li class="label">Java</li>
+                  <li class="label">Python</li>
+                  <li class="label secondary">WPILIB</li>
+                  <li class="label secondary">OpenCV</li>
+                  <li class="label secondary">NetworkTables</li>
+                </ul>
+              </div>
+            </div>
+            <p class="caption">Competed in the FIRST Robotics Competition for four years, programming robotic movement, control, and autonomous navigation.
+            <br><a href="https://github.com/KnightVision4940">Source Code</a></p>
+    			</div>
+          <div class="medium-6 cell"><span class="project-name">Ludum Dare</span>
+            <div class="grid-x">
+              <a class="button portfolio medium-6 cell" style="background-image: url('img/ld.png');" href="https://ldjam.com/users/shockwire/games">
+                <span class="overlay-cover">Take a peek at my LD profile!</span>
+              </a>
+              <div class="medium-6 cell skill-badges">
+                <ul class="no-bullet">
+                  <li class="label">Lua</li>
+                  <li class="label">Java</li>
+                  <li class="label secondary">LÖVE 2D</li>
+                  <li class="label secondary">LibGDX</li>
+                </ul>
+              </div>
+            </div>
+            <p class="caption">Participated in the game jams <strong>Ludum Dare 37 and 38</strong>.
+            <br><a href="https://shockwire.itch.io/ninja-boi-break-out">Link to my LD37 entry: <strong>Ninja Boi: Break Out</strong> entry.</a>
+            <br><a href="https://shockwire.itch.io/galactic-cuisine">Link to my LD38 entry: <strong>Galactic Cuisine</strong></a></p>
+    			</div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="section row grid-container fluid" id="skills" data-magellan-target="skills">
+        <div class="grid-x">
+          <h2 class="sub">Skills</h2>
+        </div>
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-4">
+            <h4 class="project-name">Coding Languages</h4>
+            <ul class="no-bullet caption bold skill-set">
+              <li>Java</li>
+              <li>Python</li>
+              <li>Lua</li>
+              <li>C#</li>
+              <li>HTML & CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="cell medium-4">
+            <h4 class="project-name">Tools & Software</h4>
+            <ul class="no-bullet caption bold skill-set">
+              <li>Git</li>
+              <li>Unity</li>
+              <li>libGDX</li>
+              <li>Corona SDK</li>
+              <li>LÖVE 2D</li>
+              <li>OpenCV</li>
+              <li>Foundation</li>
+              <li>Photoshop</li>
+              <li>Blender</li>
+            </ul>
+          </div>
+          <div class="cell medium-4">
+            <h4 class="project-name">Extra Skills</h4>
+            <ul class="no-bullet caption bold skill-set">
+              <li>Basic 3D Modelling, Texturing</li>
+              <li>Web Design</li>
+              <li>Project Management</li>
+              <li>Strong Communication Skills</li>
+              <li>Pretty Decent at Curling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="section row grid-container fluid" id="contact">
+        <div class="grid-x">
+          <h2 class="sub">Contact</h2>
+          <p class="textbody">
+            You can shoot me an email at <strong><a href="mailto:stewesho@gmail.com"><i class="fa fa-envelope"></i> StewEsho@gmail.com</a></strong> or find me on
+            <strong><a href="http://github.com/StewEsho"><i class="fa fa-github"></i> GitHub</a></strong> or
+            <strong><a href="https://www.linkedin.com/in/steward-esho"><i class="fa fa-linkedin-square"></i> LinkedIn</a></strong>.
+            <br>I'm always up to have a chat!
+          </p>
+        </div>
+      </div>
+      <br>
+      <h1 class="return-to-top"><a href="#about-me"><i class="fa fa-chevron-circle-up"></i></a></h1>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
