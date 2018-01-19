@@ -158,6 +158,7 @@
 
 .skill-set > li {
   text-align: left;
+  padding-left: 1rem;
 } .skill-set > li:nth-child(odd){
   background-color: #b7cff0;
 }
