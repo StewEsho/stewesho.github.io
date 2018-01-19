@@ -2241,8 +2241,8 @@ h6, .h6 {
   font-style: normal;
   font-weight: normal;
   color: inherit;
-  text-rendering: optimizeLegibility; }
-  h1 small, .h1 small,
+  text-rendering: optimizeLegibility;
+} h1 small, .h1 small,
   h2 small, .h2 small,
   h3 small, .h3 small,
   h4 small, .h4 small,
@@ -2260,8 +2260,8 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.25rem;
   line-height: 1.4;
-  margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;}
 
 h3, .h3 {
   font-size: 1.1875rem;
