@@ -28,7 +28,7 @@
   font-weight: 900;
   background-color: #113c7a;
   color: ghostwhite;
-  padding: 0 0.4em 0.05em 3em;
+  padding: 0.3em 0.4em 0.3em 3em;
 }
 
 #header{
@@ -99,8 +99,9 @@
   margin-right: auto;
 	text-align: center;
 	margin: : 0.75em;
-  -webkit-clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
-  clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
+    padding: 0.5em 0.5em 2.5em 0.5em;
+    background-color: ghostwhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .portfolio {
@@ -157,6 +158,7 @@
 
 .skill-set > li {
   text-align: left;
+  padding-left: 1rem;
 } .skill-set > li:nth-child(odd){
   background-color: #b7cff0;
 }
