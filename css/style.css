@@ -84,7 +84,7 @@
 
 .textbody {
 	padding: 6px 32px 0px 32px;
-	font-size: 1.3em;
+	font-size: 1em;
 	font-weight: 300;
 	margin: 0;
 	text-align: left;
@@ -92,7 +92,7 @@
 }
 
 #personal-photo {
-	max-height: 320px;
+	max-height: 250px;
   width: auto;
 	height: auto;
   margin-left: auto;
