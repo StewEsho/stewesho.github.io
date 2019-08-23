@@ -1,0 +1,104 @@
+---
+title: sass
+---
+/**
+* MIXINS + FUNCTIONS
+**/
+@function shade($color, $percent){
+    @return mix($color)
+}
+
+/**
+* Pallete
+**/ //PRIMARY
+$stew-blackest: rgb(38, 38, 38);
+$stew-blacker: rgb(44, 48, 46);
+$stew-black: rgb(71, 74, 72);
+$stew-beige: rgb(249, 249, 204);
+$stew-lime: rgb(119, 255, 148);
+////////
+$stew-link: rgb(252, 251, 243);
+$stew-darker-lime: rgb(60, 128, 74);
+
+/**
+* GENERAL
+**/
+a {
+    text-decoration: none;
+    color: $stew-beige;
+    &:hover, &:active, &:focus {
+        text-decoration: underline;
+    }
+} body {
+    background-color: $stew-blackest;
+    color: $stew-beige;
+}
+
+/**
+* MASTHEAD
+**/
+$angled-edge--px-offset: 35px;
+section#title-container{
+    background-color: $stew-black;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--px-offset}));
+    position: relative;
+    z-index: 3; //So it appears above the nav bar
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#profile-pic {
+    clip-path: polygon($angled-edge--px-offset 100%, 0 0, 100% 0, 100% 100%);
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#title {
+    h1{
+        font-size: 24rem;
+        font-weight: 900;
+        color: $stew-lime;
+        margin: 0px;
+        text-align: center;
+        text-shadow: 3px 3px 0px rgba(60, 128, 74, 1), 5px 5px 1px rgba(25, 75, 40, 1);
+    }
+}
+
+/**
+* nav
+**/
+
+#nav {
+    position: relative;
+    top: -$angled-edge--px-offset;
+    margin: 0 auto;
+    padding: #{$angled-edge--px-offset} 0px;
+
+    clip-path: polygon(0 calc(100% - #{$angled-edge--px-offset}), 0 0, 100% 0, 100% 100%);
+
+    min-height: 3rem;
+    background-color: $stew-blacker;
+    
+    ul {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+
+        list-style: none;
+        li {
+            list-style: none;
+            margin: 0 0 0 20px;
+            &:first-child{
+                margin: 0;
+            }
+        }
+    }
+}

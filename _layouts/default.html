@@ -2,18 +2,49 @@
 
 <html>
     <head>
-        <title>{{ page.title }}</title>
+        <title>Stew Esho</title>
 
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/skeleton.css"  />
+        <link rel="stylesheet" type="text/css" href="css/style.css"     />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+              crossorigin="anonymous"></script>
+        <script src="js/general.js"></script>
+
+        <!-- TODO: FAVICON -->
+
     </head>
     <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-            </ul>
-        </nav>
+        <header id="masthead">
+            <section id="title-container" class="row">
+                <hgroup id="title" class="eight columns">
+                    <h1>
+                        STEW ESHO
+                    </h1>
+                </hgroup>
+                <div id="profile-pic" class="four columns">
+                    <img src="http://placehold.it/1024" />
+                </div>
+            </section>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href = "#">about</a>
+                    </li>
+                    <li>
+                        <a href = "#">contact</a>
+                    </li>
+                    <li>
+                        <a href = "#">skills</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
         <div class="container">
             {{ content }}
         </div> <!-- /.container -->
