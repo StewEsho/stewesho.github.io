@@ -1,11 +1,12 @@
 ---
-title: sass
 ---
+//The above lines are Jekyll front-matter. This allows Jekyll to automatically interpret and compile this Sass file.
+
 /**
 * MIXINS + FUNCTIONS
 **/
-@function shade($color, $percent){
-    @return mix($color)
+@mixin clip-path($data){
+    clip-path: $data;
 }
 
 /**
@@ -32,6 +33,9 @@ a {
 } body {
     background-color: $stew-blackest;
     color: $stew-beige;
+} h2 {
+    font-weight: 700;
+    font-size: 6rem;
 }
 
 /**
@@ -47,26 +51,29 @@ section#title-container{
 
 #title {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+    flex-flow: column nowrap;
+    margin: auto;
+    align-content: center;
 
-#profile-pic {
-    clip-path: polygon($angled-edge--px-offset 100%, 0 0, 100% 0, 100% 100%);
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-#title {
     h1{
-        font-size: 24rem;
+        font-size: 18rem;
         font-weight: 900;
         color: $stew-lime;
         margin: 0px;
         text-align: center;
         text-shadow: 3px 3px 0px rgba(60, 128, 74, 1), 5px 5px 1px rgba(25, 75, 40, 1);
+    } h2.subtitle {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+#profile-pic {
+    clip-path: polygon($angled-edge--px-offset 100%, 0 0, 100% 0, 100% 100%);
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -98,6 +105,41 @@ section#title-container{
             margin: 0 0 0 20px;
             &:first-child{
                 margin: 0;
+            }
+        }
+    }
+}
+
+/**
+* About
+**/
+
+#about {
+    .cta {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 96rem;
+        margin: auto;
+        .link {
+            background-color: transparent;
+            color: $stew-beige;
+            border: 3px solid $stew-beige;
+            transition: background-color 0.25s ease-out, color 0.125s ease-out;
+            &:hover {
+                background-color: $stew-beige;
+                color: $stew-blackest;
+            }
+
+            flex-basis: 22.5%;
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: bold;
+            padding: 10px 4px;
+            margin-right: 8px;
+            &:last-child{
+                margin-right: 0px;
             }
         }
     }
