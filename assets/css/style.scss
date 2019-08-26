@@ -3,10 +3,22 @@
 //The above lines are Jekyll front-matter. This allows Jekyll to automatically interpret and compile this Sass file.
 
 /**
+Font Icons: {
+    icon-doc-text
+    icon-mail-alt
+    icon-link-ext-alt
+    icon-youtube-play
+    icon-file-code
+    icon-github-squared
+    icon-linkedin-squared
+}
+**/
+
+/**
 * MIXINS + FUNCTIONS
 **/
 @mixin clip-path($data){
-    clip-path: $data;
+    clip-path: $data; 
 }
 
 /**
@@ -25,10 +37,13 @@ $stew-darker-lime: rgb(60, 128, 74);
 * GENERAL
 **/
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
     color: $stew-beige;
     &:hover, &:active, &:focus {
         text-decoration: underline;
+        text-decoration-style: solid;
+        color: white;
     }
 } body {
     background-color: $stew-blackest;
@@ -43,6 +58,7 @@ a {
     margin-bottom: 2rem;
 } p {
     line-height: 1.7;
+    font-size: 1.8rem;
 }
 
 .columns {
@@ -122,6 +138,16 @@ section#title-container{
                 margin: 0;
             }
         }
+    }
+}
+
+/**
+* content
+**/
+main#content{
+    padding: 8rem;
+    @media screen and (max-width: 680px) {
+        padding: 0.8rem;
     }
 }
 
