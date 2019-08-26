@@ -33,9 +33,20 @@ a {
 } body {
     background-color: $stew-blackest;
     color: $stew-beige;
-} h2 {
+} h1, h2, h3, h4, h5, h6{
     font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+} h2 {
     font-size: 6rem;
+} section {
+    margin-bottom: 2rem;
+} p {
+    line-height: 1.7;
+}
+
+.columns {
+    float: unset;
 }
 
 /**
@@ -47,18 +58,22 @@ section#title-container{
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--px-offset}));
     position: relative;
     z-index: 3; //So it appears above the nav bar
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 #title {
     display: flex;
     flex-flow: column nowrap;
-    margin: auto;
+    height: 100%;
     align-content: center;
 
-    h1{
-        font-size: 18rem;
+    h1{ //18rem
         font-weight: 900;
         color: $stew-lime;
+        width: 100%;
         margin: 0px;
         text-align: center;
         text-shadow: 3px 3px 0px rgba(60, 128, 74, 1), 5px 5px 1px rgba(25, 75, 40, 1);
@@ -85,7 +100,7 @@ section#title-container{
     position: relative;
     top: -$angled-edge--px-offset;
     margin: 0 auto;
-    padding: #{$angled-edge--px-offset} 0px;
+    padding: #{$angled-edge--px-offset / 2} 0px #{$angled-edge--px-offset};
 
     clip-path: polygon(0 calc(100% - #{$angled-edge--px-offset}), 0 0, 100% 0, 100% 100%);
 
