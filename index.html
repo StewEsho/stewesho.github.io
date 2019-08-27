@@ -75,6 +75,23 @@ title: Stew Esho
         Skills
     </h2>
     <p>
-        Nulla quis ligula a nibh fringilla lacinia vitae scelerisque metus. Cras ultricies imperdiet venenatis. Nullam eu tempor libero, id laoreet turpis. Etiam commodo erat a mi rutrum, pretium accumsan magna dapibus. Nam pulvinar laoreet elit et sollicitudin. Vivamus euismod, felis id maximus fringilla, ipsum velit vehicula felis, at interdum tortor dui eu lectus. Donec commodo nulla euismod arcu eleifend, a vehicula mauris ultrices. Integer lectus magna, maximus sed urna vitae, ultricies condimentum lorem. Vivamus scelerisque volutpat dictum. Phasellus ac mauris in lacus sollicitudin rhoncus. Cras non tellus non sem facilisis cursus sed a erat. Donec rhoncus magna sit amet urna consequat varius. Vestibulum dui dui, varius ac quam et, ultricies rhoncus eros. Nam dui diam, porta in laoreet et, aliquam in dui. Phasellus molestie pretium suscipit.
+        My work uses a variety of different languages and frameworks depending on what job needs to be done. 
     </p>
+    <div class="skills-container">
+        <div class="languages">
+            {% for lang in site.data.skills.languages %}
+                <ul>
+                    <li class="language skill">{{lang.name}}</li>
+                    {% for framework in lang.frameworks %}
+                        <li class="framework skill">{{framework}}</li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        </div>
+        <ul class="auxillaries">
+            {% for skill in site.data.skills.auxillaries %}
+                <li class="auxillary skill">{{skill}}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>

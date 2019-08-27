@@ -22,10 +22,13 @@ Font Icons: {
 }
 
 /**
-* Pallete
-**/ //PRIMARY
+* VARIABLES
+**/
+
+
+//  Color Palette
+//PRIMARY
 $stew-blackest: rgb(27, 27, 27);
-// $stew-blacker: rgb(44, 48, 46);
 $stew-blacker: rgb(49, 53, 51);
 $stew-black: rgb(71, 74, 72);
 $stew-beige: rgb(249, 249, 204);
@@ -33,6 +36,9 @@ $stew-lime: rgb(119, 255, 148);
 ////////
 $stew-link: rgb(252, 251, 243);
 $stew-darker-lime: rgb(60, 128, 74);
+
+//  Responsive Breakpoints
+$mobi-breakpoint: 68rem;
 
 /**
 * GENERAL
@@ -69,10 +75,10 @@ a {
 /**
 * MASTHEAD
 **/
-$angled-edge--px-offset: 35px;
+$angled-edge--rem-offset: 3.5rem;
 section#title-container{
     background-color: $stew-black;
-    clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--px-offset}));
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--rem-offset}));
     position: relative;
     z-index: 3; //So it appears above the nav bar
     margin: 0;
@@ -92,9 +98,9 @@ section#title-container{
         font-weight: 900;
         color: $stew-lime;
         width: 100%;
-        margin: 0px;
+        margin: 0;
         text-align: center;
-        text-shadow: 3px 3px 0px rgba(60, 128, 74, 1), 5px 5px 1px rgba(25, 75, 40, 1);
+        text-shadow: 0.3rem 0.3rem 0 rgba(60, 128, 74, 1), 0.5rem 0.5rem 0.1rem rgba(25, 75, 40, 1);
     } h2.subtitle {
         text-align: center;
         margin-bottom: 2rem;
@@ -102,7 +108,7 @@ section#title-container{
 }
 
 #profile-pic {
-    clip-path: polygon($angled-edge--px-offset 100%, 0 0, 100% 0, 100% 100%);
+    clip-path: polygon($angled-edge--rem-offset 100%, 0 0, 100% 0, 100% 100%);
     overflow: hidden;
     img {
         width: 100%;
@@ -116,11 +122,11 @@ section#title-container{
 
 #nav {
     position: relative;
-    top: -$angled-edge--px-offset;
+    top: -$angled-edge--rem-offset;
     margin: 0 auto;
-    padding: #{$angled-edge--px-offset} 0px #{$angled-edge--px-offset};
+    padding: #{$angled-edge--rem-offset} 0 #{$angled-edge--rem-offset};
 
-    clip-path: polygon(0 calc(100% - #{$angled-edge--px-offset}), 0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 calc(100% - #{$angled-edge--rem-offset}), 0 0, 100% 0, 100% 100%);
 
     min-height: 3rem;
     background-color: $stew-blacker;
@@ -135,7 +141,7 @@ section#title-container{
         list-style: none;
         li {
             list-style: none;
-            margin: 0 0 0 20px;
+            margin: 0 0 0 2rem;
             &:first-child{
                 margin: 0;
             }
@@ -146,10 +152,10 @@ section#title-container{
 /**
 * content
 **/
-main#content {
+main {
     section {
         padding: 3rem 8rem;
-        @media screen and (max-width: 680px) {
+        @media screen and (max-width: 68rem) { //680px
             padding: 0.8rem;
         }
     }
@@ -159,7 +165,8 @@ main#content {
 * About
 **/
 
-#about {
+section#about {
+    padding-top: 0;
     .cta {
         display: flex;
         flex-flow: row wrap;
@@ -171,7 +178,7 @@ main#content {
         .link {
             background-color: transparent;
             color: $stew-beige;
-            border: 3px solid $stew-beige;
+            border: 0.3rem solid $stew-beige;
             transition: background-color 0.25s ease-out, color 0.125s ease-out;
             &:hover {
                 background-color: $stew-beige;
@@ -184,10 +191,10 @@ main#content {
             text-align: center;
             font-size: 2.4rem;
             font-weight: bold;
-            padding: 10px 4px;
-            margin-right: 8px;
+            padding: 1rem 0.4rem;
+            margin-right: 0.8rem;
             &:last-child{
-                margin-right: 0px;
+                margin-right: 0;
             }
         }
     }
@@ -198,7 +205,7 @@ main#content {
 **/
 #projects{
     background-color: $stew-blacker;
-    clip-path: polygon(0 100%, 0 0, 100% $angled-edge--px-offset, 100% calc(100% - #{$angled-edge--px-offset}));
+    clip-path: polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% calc(100% - #{$angled-edge--rem-offset}));
 }
 
 .projects-container {
@@ -242,15 +249,41 @@ main#content {
     align-items: flex-start;
     align-content: flex-start;
     flex-flow: row wrap;
-    .skill {
-        margin: 2px;
+}
 
-        flex-basis: content;
-        list-style: none;
-        display: block;
-        line-height: 1;
-        color: $stew-beige;
-        border: 2px solid $stew-beige;
-        padding: 4px 10px;
+/**
+* Skills
+**/
+.skill {
+    margin: 0.2rem;
+
+    flex-basis: content;
+    list-style: none;
+    display: block;
+    line-height: 1;
+    color: $stew-beige;
+    border: 0.2rem solid $stew-beige;
+    padding: 0.4rem 1rem;
+
+    &.language {
+        margin-bottom: 0.6rem;
+        background-color: $stew-beige;
+        color: $stew-blackest;
     }
+}
+
+.languages {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    ul {
+        flex-basis: calc(#{(100% / 6)} - 1rem);
+    }
+}
+
+.auxillaries {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 68rem;
+    margin: auto;
 }
