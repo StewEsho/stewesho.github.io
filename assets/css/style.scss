@@ -146,10 +146,12 @@ section#title-container{
 /**
 * content
 **/
-main#content > section{
-    padding: 3rem 8rem;
-    @media screen and (max-width: 680px) {
-        padding: 0.8rem;
+main#content {
+    section {
+        padding: 3rem 8rem;
+        @media screen and (max-width: 680px) {
+            padding: 0.8rem;
+        }
     }
 }
 
