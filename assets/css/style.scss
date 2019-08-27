@@ -40,6 +40,9 @@ $stew-darker-lime: rgb(60, 128, 74);
 //  Responsive Breakpoints
 $mobi-breakpoint: 68rem;
 
+//  Other general vars
+$angled-edge--rem-offset: 3.5rem;
+
 /**
 * GENERAL
 **/
@@ -75,7 +78,6 @@ a {
 /**
 * MASTHEAD
 **/
-$angled-edge--rem-offset: 3.5rem;
 section#title-container{
     background-color: $stew-black;
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--rem-offset}));
@@ -154,7 +156,7 @@ section#title-container{
 **/
 main {
     section {
-        padding: 3rem 8rem;
+        padding: $angled-edge--rem-offset 8rem;
         @media screen and (max-width: 68rem) { //680px
             padding: 0.8rem;
         }
@@ -265,8 +267,10 @@ section#about {
     border: 0.2rem solid $stew-beige;
     padding: 0.4rem 1rem;
 
-    &.language {
+    &.language, &.framework {
         margin-bottom: 0.6rem;
+    }
+    &.language {
         background-color: $stew-beige;
         color: $stew-blackest;
     }
