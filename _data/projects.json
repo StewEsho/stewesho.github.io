@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Reflect, Refract, Escape",
+        "description": "Educational multiplayer puzzle video game, designed to teach light optics to high school students. Developed algorithms to handle light-ray reflections and refractions. Completed for research at the University of Toronto. Play-test data (from a collection of testers that included current high-school students) was analyzed to conclude the optimal game design elements for educational games.",
+        "img": "rre.png",
+        "repo": "https://github.com/StewEsho/Reflect-Refract-Escape",
+        "site": "",
+        "languages": 
+        [
+            "C#"
+        ], 
+        "frameworks": 
+        [
+            "Unity3D"
+        ]
+    },
+    {
+        "name": "stewesho.me",
+        "description": "That's this very site! This is hosted on GitHub Pages and is open source.",
+        "img": "site.png",
+        "repo": "https://github.com/StewEsho/stewesho.github.io",
+        "site": "http://stewesho.me",
+        "languages": 
+        [
+            "HTML5", "Sass", "Javascript"
+        ], 
+        "frameworks": 
+        [
+            "Jekyll", "jQuery"
+        ]
+    },
+    {
+        "name": "Slymes",
+        "description": "Online multiplayer arena game (similar to agar.io). Players control a \"Slyme\" through wide open 3-D spaces, collecting food to grow larger and absorbing other players with smaller Slymes. Project involved devloping game mechanics, inventory management, online netplay, and graphical interfaces.",
+        "img": "slymes.png",
+        "site": "https://store.steampowered.com/app/530300/Slymes/",
+        "languages":
+        [
+            "C#"
+        ],
+        "frameworks": [
+            "Unity3D"
+        ]
+    }, {
+        "name": "Radial Bracket Generator",
+        "description": "[Under Development]: Web-app that generates a radial tournament bracket. User may input custom teams, and the app will automatically seed and generate the tournament. Users can advance and relegate teams within their bracket, and tournament brackets can be saved to the app database. Frontend is created in React, and backend API is created using Flask with MongoDB (subject to changes)",
+        "img": "bracket.png",
+        "repo": "https://github.com/StewEsho/radial-bracket-3",
+        "site": "",
+        "languages":
+        [
+            "Javascript",
+            "Python"
+        ],
+        "frameworks":
+        [
+            "React",
+            "Flask",
+            "MongoDB"
+        ]
+    }
+]

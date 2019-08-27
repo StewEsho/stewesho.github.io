@@ -36,21 +36,25 @@ title: Stew Esho
         This is a collection of several projects I have worked on over the years. The collection includes side projects, work projects, and school projects.
     </p>
     <div class="projects-container">
-        {% for project in site.projects %}
+        {% for project in site.data.projects %}
             <div class="project">
                 <h3>
-                    <a href="{{ project.site }}">
+                    <a href="{% if project.site %}{{ project.site }}{% endif %}">
                         {{project.name}}
                     </a>
                 </h3>
 
                 <figure class="image">
                     <img src="/assets/img/{{project.img}}" alt="{{project.name}}">
+                    <figcaption class="cta">
+                        {% if project.repo %}
+                            <a href="{{project.repo}}"><i class="icon icon-github-squared"></i> Source Code</a>
+                        {% endif %}
+                        {% if project.site %}
+                            <a href="{{project.site}}"><i class="icon icon-link-ext-alt"></i>Project Page</a>
+                        {% endif %}
+                    </figcaption>
                 </figure>
-                <div class="cta">
-                    <a href="{{project.repo}}"><i class="icon icon-github-squared"></i> Source Code</a>
-                    <a href="{{project.site}}"><i class="icon icon-link-ext-alt"></i>Project Page</a>
-                </div>
                 
 
                 <div class="two-row">
@@ -58,9 +62,14 @@ title: Stew Esho
                         {{project.description}}
                     </p>
                     <ul class="project-skills">
-                        {% for skill in project.skills %}
-                            <li class="skill">
-                                {{skill}}
+                        {% for language in project.languages %}
+                            <li class="language skill">
+                                {{language}}
+                            </li>
+                        {% endfor %}
+                        {% for framework in project.frameworks %}
+                            <li class="framework skill">
+                                {{framework}}
                             </li>
                         {% endfor %}
                     </ul>
