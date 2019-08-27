@@ -38,23 +38,29 @@ title: Stew Esho
     <div class="projects-container">
         {% for project in site.projects %}
             <div class="project">
-                <img src="/assets/img/{{project.img}}" alt="{{project.name}}">
                 <h3>
                     <a href="{{ project.site }}">
                         {{project.name}}
                     </a>
                 </h3>
-                <a href="{{project.repo}}"><i class="icon icon-github-squared"></i> Source Code</a>
-                <p class="description">
-                    {{project.content | markdownify}}
-                </p>
-                <ul>
-                    {% for skill in project.skills %}
-                        <li>
-                            {{skill}}
-                        </li>
-                    {% endfor %}
-                </ul>
+
+                <figure class="image">
+                    <img src="/assets/img/{{project.img}}" alt="{{project.name}}">
+                </figure>
+                <a class="cta" href="{{project.repo}}"><i class="icon icon-github-squared"></i> Source Code</a>
+
+                <div class="two-row">
+                    <p class="description">
+                        {{project.description}}
+                    </p>
+                    <ul class="project-skills">
+                        {% for skill in project.skills %}
+                            <li class="skill">
+                                {{skill}}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>                
             </div>
         {% endfor %}
     </div>

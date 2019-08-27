@@ -200,8 +200,50 @@ main#content > section{
 .projects-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .project {
-    flex-basis: 45%;
+    flex-basis: 48%;
+    margin-top: 4rem;
+    .two-row {
+        display: flex;
+        flex-flow: row nowrap;
+        & > * {
+            flex-basis: 48%;
+            margin: 1rem;
+        } 
+    } 
+    .image {
+        display: block;
+        margin: 0 0 1rem;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .cta {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.project-skills {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    .skill {
+        margin: 2px;
+
+        flex-basis: content;
+        list-style: none;
+        display: block;
+        line-height: 1;
+        color: $stew-beige;
+        border: 2px solid $stew-beige;
+        padding: 4px 10px;
+    }
 }
