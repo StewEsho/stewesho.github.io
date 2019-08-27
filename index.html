@@ -10,31 +10,54 @@ title: Stew Esho
         Feel free to check out my projects below, and if you are interested in my work feel free to <strong>get in touch.</strong>
     </p>
     <div class="cta">
-        <div class="link">
+        <a href="/assets/resume/StewEsho-Fall2019.pdf" class="link">
             <i class="icon icon-doc-text"></i>
             Resume
-        </div>
-        <div class="link">
+        </a>
+        <a href="https://github.com/stewesho" class="link">
             <i class="icon icon-github-squared"></i>
             GitHub
-        </div>
-        <div class="link">
+        </a>
+        <a href="https://www.linkedin.com/in/stew-esho/" class="link">
             <i class="icon icon-linkedin-squared"></i>
             LinkedIn
-        </div>
-        <div class="link">
+        </a>
+        <a href="mailto:stewesho@gmail.com" class="link">
             <i class="icon icon-mail-alt"></i>
             Email
-        </div>
+        </a>
     </div>
 </section>
 <section id="projects">
     <h2>
         Projects
     </h2>
-    <p>
-        Etiam varius commodo iaculis. Donec aliquam quam libero. Fusce sit amet sodales urna. Cras consectetur, nunc eget commodo commodo, lectus metus feugiat lectus, ut laoreet nisi nibh eget est. Aenean tempor porta orci, eu egestas diam feugiat quis. Ut feugiat quam quis lorem rutrum mattis. Donec aliquam faucibus leo efficitur molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sed odio non nulla tincidunt pellentesque in eget massa. Cras mauris enim, iaculis ac fermentum nec, cursus et massa. Maecenas fermentum vitae tortor bibendum pellentesque. In maximus purus sit amet orci dictum, ut scelerisque libero vestibulum. Quisque felis ligula, commodo eu blandit in, sollicitudin vitae arcu. Vivamus ut ex auctor, viverra libero non, sodales arcu. 
+    <p class="description">
+        This is a collection of several projects I have worked on over the years. The collection includes side projects, work projects, and school projects.
     </p>
+    <div class="projects-container">
+        {% for project in site.projects %}
+            <div class="project">
+                <img src="/assets/img/{{project.img}}" alt="{{project.name}}">
+                <h3>
+                    <a href="{{ project.site }}">
+                        {{project.name}}
+                    </a>
+                </h3>
+                <a href="{{project.repo}}"><i class="icon icon-github-squared"></i> Source Code</a>
+                <p class="description">
+                    {{project.content | markdownify}}
+                </p>
+                <ul>
+                    {% for skill in project.skills %}
+                        <li>
+                            {{skill}}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
 </section>
 
 <section id="skills">

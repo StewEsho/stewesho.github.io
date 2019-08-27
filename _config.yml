@@ -1,4 +1,6 @@
 name: Stew Esho
 markdown: kramdown
-host: 10.0.1.138
+host: localhost
 port: 4000
+collections:
+  - projects

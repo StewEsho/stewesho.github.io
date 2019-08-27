@@ -144,8 +144,8 @@ section#title-container{
 /**
 * content
 **/
-main#content{
-    padding: 8rem;
+main#content > section{
+    padding: 3rem 8rem;
     @media screen and (max-width: 680px) {
         padding: 0.8rem;
     }
@@ -163,6 +163,7 @@ main#content{
         align-items: center;
         max-width: 96rem;
         margin: auto;
+
         .link {
             background-color: transparent;
             color: $stew-beige;
@@ -173,6 +174,8 @@ main#content{
                 color: $stew-blackest;
             }
 
+            display: block;
+            text-decoration: none;
             flex-basis: 22.5%;
             text-align: center;
             font-size: 2.4rem;
@@ -184,4 +187,21 @@ main#content{
             }
         }
     }
+}
+
+/**
+* Projects
+**/
+#projects{
+    background-color: $stew-blacker;
+    clip-path: polygon(0 100%, 0 0, 100% $angled-edge--px-offset, 100% calc(100% - #{$angled-edge--px-offset}));
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.project {
+    flex-basis: 45%;
 }
