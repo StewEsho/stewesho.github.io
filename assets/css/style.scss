@@ -24,8 +24,9 @@ Font Icons: {
 /**
 * Pallete
 **/ //PRIMARY
-$stew-blackest: rgb(38, 38, 38);
-$stew-blacker: rgb(44, 48, 46);
+$stew-blackest: rgb(27, 27, 27);
+// $stew-blacker: rgb(44, 48, 46);
+$stew-blacker: rgb(49, 53, 51);
 $stew-black: rgb(71, 74, 72);
 $stew-beige: rgb(249, 249, 204);
 $stew-lime: rgb(119, 255, 148);
@@ -74,6 +75,7 @@ section#title-container{
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--px-offset}));
     position: relative;
     z-index: 3; //So it appears above the nav bar
+    margin: 0;
 
     display: flex;
     flex-flow: row wrap;
@@ -116,7 +118,7 @@ section#title-container{
     position: relative;
     top: -$angled-edge--px-offset;
     margin: 0 auto;
-    padding: #{$angled-edge--px-offset / 2} 0px #{$angled-edge--px-offset};
+    padding: #{$angled-edge--px-offset} 0px #{$angled-edge--px-offset};
 
     clip-path: polygon(0 calc(100% - #{$angled-edge--px-offset}), 0 0, 100% 0, 100% 100%);
 
@@ -224,9 +226,12 @@ main#content > section{
         }
     }
     .cta {
-        display: block;
-        width: 100%;
-        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        a {
+            margin: 0 0.5rem;
+        }
     }
 }
 

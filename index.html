@@ -4,7 +4,7 @@ title: Stew Esho
 ---
 <section id="about">
     <p>
-        I am a <strong>computer science</strong> student with a minor in <strong>mathematics</strong> at the <strong>University of Toronto</strong>. My specialties are <strong>web design</strong> and <strong>game development</strong>, and I have a vast catalog of previous projects from my prior work experience and personal side-projects.
+        I am a <strong>computer science</strong> student with a minor in <strong>mathematics</strong> at the <strong>University of Toronto</strong>. My specialties are <strong>web design</strong> and <strong>game development</stron>, and I have a vast catalog of previous projects from my prior work experience and personal side-projects.
     </p>
     <p>
         Feel free to check out my projects below, and if you are interested in my work feel free to <strong>get in touch.</strong>
@@ -47,7 +47,11 @@ title: Stew Esho
                 <figure class="image">
                     <img src="/assets/img/{{project.img}}" alt="{{project.name}}">
                 </figure>
-                <a class="cta" href="{{project.repo}}"><i class="icon icon-github-squared"></i> Source Code</a>
+                <div class="cta">
+                    <a href="{{project.repo}}"><i class="icon icon-github-squared"></i> Source Code</a>
+                    <a href="{{project.site}}"><i class="icon icon-link-ext-alt"></i>Project Page</a>
+                </div>
+                
 
                 <div class="two-row">
                     <p class="description">
