@@ -38,7 +38,6 @@ $stew-link: rgb(252, 251, 243);
 $stew-darker-lime: rgb(60, 128, 74);
 
 //  Responsive Breakpoints
-$tiny-breakpoint: 480px;
 $mobi-breakpoint: 680px;
 $tablet-breakpoint: 768px;
 $mdpi-breakpoint: 1024px;
@@ -378,6 +377,13 @@ section#about {
         .subtitle {
             font-size: 3.25rem;
         }
+
+        #profile-pic {
+            flex: 1 0 100vw;
+            clip-path: polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% 100%);
+            max-height: 37.5vh; //fallback
+            max-height: 37.5vmax;
+        }
     }
 
     section#about {
@@ -389,6 +395,7 @@ section#about {
     }
 
     .project{
+        flex: 1 0 100%;
         .title {
             font-size: 2.4rem;
         }
@@ -400,19 +407,5 @@ section#about {
         .languages, .auxillaries {
             display: block;
         }
-    }
-}
-
-@media screen and (max-width: $tiny-breakpoint){
-    section#title-container{
-        #profile-pic {
-            flex: 1 0 100vw;
-            clip-path: polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% 100%);
-            max-height: 37.5vh;
-        }
-    }
-
-    .project{
-        flex: 1 0 100%;
     }
 }
