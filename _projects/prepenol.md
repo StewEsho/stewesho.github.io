@@ -1,5 +1,6 @@
 ---
-name: Prepenol
+title: Prepenol
+order_num: 70
 img: prepenol.png
 site: https://play.google.com/store/apps/details?id=com.stewesho.Prepenol
 repo: https://github.com/StewEsho/prepenol

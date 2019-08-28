@@ -1,5 +1,5 @@
 ---
-name: WASC
+title: WASC
 img: WASC.png
 repo: https://github.com/StewEsho/WASC
 languages:

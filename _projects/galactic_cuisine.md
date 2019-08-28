@@ -1,5 +1,6 @@
 ---
-name: Galactic Cuisine
+title: Galactic Cuisine
+order_num: 60
 img: cuisine.png
 repo: https://github.com/StewEsho/LudumDare38
 site: https://ldjam.com/events/ludum-dare/38/galactic-cuisine

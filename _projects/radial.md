@@ -1,5 +1,6 @@
 ---
-name: Radial Bracket Generator
+title: Radial Bracket Generator
+order_num: 20
 img: bracket.png
 repo: https://github.com/StewEsho/radial-bracket-3
 languages:

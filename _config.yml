@@ -1,4 +1,17 @@
 name: Stew Esho
+title: Stew Esho
 markdown: kramdown
+port: 4001
 collections:
-  - projects
+  projects:
+    order:  
+      # Doesn't really work all that well :/ 
+      # just use as reference.
+      - rre.md                # 10
+      - radial.md             # 20
+      - slymes.md             # 30
+      - reso_crawler.md       # 40
+      - voyageur.md           # 50
+      - galactic_cuisine.md   # 60
+      - prepenol.md           # 70
+      - stewesho_me.md        # 80

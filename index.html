@@ -36,20 +36,21 @@ title: Stew Esho
         This is a collection of several projects I have worked on over the years. The collection includes side projects, work projects, and school projects.
     </p>
     <div class="projects-container">
-        {% for project in site.projects %}
+        {% assign projects = site.projects | sort:"order_num" %}
+        {% for project in projects %}
             <div class="project">
-                <h3>
+                <h3 class="title">
                     {% if project.site %}
                         <a href="{{ project.site }}">
-                            {{project.name}}
+                            {{project.title}}
                         </a>
                     {% else %}
-                        {{project.name}}
+                        {{project.title}}
                     {% endif %}
                 </h3>
 
                 <figure class="image">
-                    <img src="/assets/img/projects/{{project.img}}" alt="{{project.name}}">
+                    <img src="./assets/img/projects/{{project.img}}" alt="{{project.title}}">
                     <figcaption class="cta">
                         {% if project.repo %}
                             <a href="{{project.repo}}"><i class="icon icon-github-squared"></i> Source Code</a>

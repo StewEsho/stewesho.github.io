@@ -1,5 +1,6 @@
 ---
-name: Reflect, Refract, Escape
+title: Reflect, Refract, Escape
+order_num: 10
 img: rre.png
 repo: https://github.com/StewEsho/Reflect-Refract-Escape
 languages:
