@@ -92,6 +92,12 @@ section#title-container{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
+    #title {
+        flex: 1 0 67%;
+    } #profile-pic {
+        flex: 1 1 30%;
+    }
 }
 
 #title {
@@ -319,6 +325,12 @@ section#about {
 }
 
 @media screen and (max-width: $mdpi-breakpoint){
+    #title-container{
+        .subtitle {
+            font-size: 4.5rem;   
+        }
+    }
+
     main {
         section {
             padding-left: 0.8rem;
@@ -362,7 +374,11 @@ section#about {
 }
 
 @media screen and (max-width: $mobi-breakpoint){
-    
+    section#title-container{
+        .subtitle {
+            font-size: 3.25rem;
+        }
+    }
 
     section#about {
         .cta{
@@ -388,7 +404,15 @@ section#about {
 }
 
 @media screen and (max-width: $tiny-breakpoint){
+    section#title-container{
+        #profile-pic {
+            flex: 1 0 100vw;
+            clip-path: polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% 100%);
+            max-height: 37.5vh;
+        }
+    }
+
     .project{
-        flex: 1 1 100%;
+        flex: 1 0 100%;
     }
 }
