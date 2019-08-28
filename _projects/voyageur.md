@@ -7,6 +7,6 @@ languages:
 frameworks:
     - JavaFX
 ---
-Proof-of-concept desktop client that manages city transit systems and the trips taken on them. Designed and developed using Java with JavaFX in a group of 4 as part of a Software Design course at the University of Toronto. 
+Proof-of-concept desktop client that manages city transit systems and the trips taken on them. Designed and developed in a group of 4 as part of a Software Design course at the University of Toronto. 
 
-Clients can create pre-paid transit cards that they can use to take trips between stations, while admin users can track rider statistics. 
+Clients can create pre-paid cards that are used to take rides on the transit system. Admin users can track statistics regarding riders, revenue, and train / bus status.
