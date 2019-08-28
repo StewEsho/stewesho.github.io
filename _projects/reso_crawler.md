@@ -1,5 +1,5 @@
 ---
-name: Reso Crawler
+title: Reso Crawler
 order_num: 40
 img: reso_crawler.png
 repo: https://github.com/StewEsho/LudumDare42

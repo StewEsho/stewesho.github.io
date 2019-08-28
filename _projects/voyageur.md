@@ -1,5 +1,5 @@
 ---
-title: Voyageur Transit Mnager
+title: Voyageur Transit Manager
 order_num: 50
 img: voyageur.png
 languages: 

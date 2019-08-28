@@ -38,7 +38,12 @@ $stew-link: rgb(252, 251, 243);
 $stew-darker-lime: rgb(60, 128, 74);
 
 //  Responsive Breakpoints
-$mobi-breakpoint: 68rem;
+$tiny-breakpoint: 480px;
+$mobi-breakpoint: 680px;
+$tablet-breakpoint: 768px;
+$mdpi-breakpoint: 1024px;
+$hdpi-breakpoint: 1280px;
+$tv-breakpoint: 1920px;
 
 //  Other general vars
 $angled-edge--rem-offset: 3.5rem;
@@ -70,9 +75,7 @@ a {
     line-height: 1.7;
     font-size: 1.8rem;
     margin-bottom: 1.4rem;
-}
-
-.columns {
+} .columns {
     float: unset;
 }
 
@@ -158,9 +161,6 @@ section#title-container{
 main {
     section {
         padding: $angled-edge--rem-offset 8rem;
-        @media screen and (max-width: 68rem) { //680px
-            padding: 0.8rem;
-        }
     }
 }
 
@@ -227,14 +227,14 @@ section#about {
     .two-row {
         display: flex;
         flex-flow: row nowrap;
-        & > * {
+        .description, .project-skills {
             margin: 1rem;
-            &:first-child {
-                flex-basis: 60%;
-            } &:last-child {
-                flex-basis: 38%;
-            }
         } 
+        .description {
+            flex-basis: 60%;
+        } .project-skills {
+            flex-basis: 38%;
+        }
     } 
     .image {
         display: block;
@@ -271,7 +271,6 @@ section#about {
         content: "\A";
     }
 }
-
 /**
 * Skills
 **/
@@ -311,4 +310,76 @@ section#about {
     flex-flow: row wrap;
     max-width: 68rem;
     margin: auto;
+}
+
+@media screen and (max-width: $hdpi-breakpoint){
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: $mdpi-breakpoint){
+    main {
+        section {
+            padding: 0.8rem;
+        }
+    }
+
+    section#about {
+        .cta {
+            .link {
+                font-size: 1.8rem;
+                flex: 2 0 34vw; //grows such that there are two per row
+                &, &:last-child{
+                    margin: 0 0.4rem 0.8rem;
+                }
+            }
+        }
+    }
+
+    .project{
+        .title {
+            font-size: 3.2rem;
+        }
+
+        .two-row{
+            display: block;
+            .description, .project-skills {
+                flex: 2 0 100%;
+            }
+        }
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: $tablet-breakpoint){
+    .project{
+        .title {
+            font-size: 2.6rem;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: $mobi-breakpoint){
+    section#about {
+        .cta{
+            .link {
+                //flex: 2 0 51% //grows such that there is one per row
+            }
+        }
+    }
+
+    .project{
+        .title {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: $tiny-breakpoint){
+    .project{
+        flex: 1 1 100%;
+    }
 }
