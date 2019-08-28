@@ -321,7 +321,8 @@ section#about {
 @media screen and (max-width: $mdpi-breakpoint){
     main {
         section {
-            padding: 0.8rem;
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
         }
     }
 
@@ -358,11 +359,11 @@ section#about {
             font-size: 2.6rem;
         }
     }
-
-    
 }
 
 @media screen and (max-width: $mobi-breakpoint){
+    
+
     section#about {
         .cta{
             .link {
@@ -374,6 +375,14 @@ section#about {
     .project{
         .title {
             font-size: 2.4rem;
+        }
+    }
+
+
+    
+    .skills-container {
+        .languages, .auxillaries {
+            display: block;
         }
     }
 }
