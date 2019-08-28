@@ -43,7 +43,7 @@
         ]
     }, {
         "name": "Radial Bracket Generator",
-        "description": "[Under Development]: Web-app that generates a radial tournament bracket. User may input custom teams, and the app will automatically seed and generate the tournament. Users can advance and relegate teams within their bracket, and tournament brackets can be saved to the app database. Frontend is created in React, and backend API is created using Flask with MongoDB (subject to changes)",
+        "description": "[Under Development]: Web-app that generates a radial tournament bracket. User may input custom teams, and the app will automatically seed and generate the tournament. Users can advance and relegate teams within their bracket, and tournament brackets can be saved to the app database. Frontend is created in React, and backend API is created using Flask and MongoDB (subject to changes)",
         "img": "bracket.png",
         "repo": "https://github.com/StewEsho/radial-bracket-3",
         "site": "",
@@ -57,6 +57,37 @@
             "React",
             "Flask",
             "MongoDB"
+        ]
+    }, 
+    {
+        "name": "Reso Crawler",
+        "description": "Procedurely-generated dungeon crawler where the size of the screen is the player's healthbar; the more damage they've taken, the less they can see. Developed from scratch in 48 hours for the Ludum Dare 42 game jam, where it was voted as one of the top 100 most innovative entries.",
+        "img": "resocrawler.png",
+        "repo": "https://github.com/StewEsho/LudumDare42",
+        "site": "https://ldjam.com/events/ludum-dare/42/reso-crawler",
+        "languages": [ "C#" ],
+        "frameworks": [ "Unity3D" ]
+    }, 
+    {
+        "name": "Prepenol",
+        "description": "Shoot-em' up game for Android mobile devices. Player uses on-screen controls to guide their spaceship, collecting powerups and shooting an endless guantlet of different enemies. Developed completely from scratch in Corona SDK, and is available on the Google Play Store.",
+        "img": "prepenol.png",
+        "site": "https://play.google.com/store/apps/details?id=com.stewesho.Prepenol",
+        "repo": "https://github.com/StewEsho/prepenol",
+        "languages": [ "Lua" ],
+        "frameworks": [ "Corona SDK" ]
+    },
+    {
+        "name": "Voyageur Transit Mnager",
+        "description": "Desktop client that manages trips taken on transit systems. Coded in Java with UI designed with JavaFX. Users can create pre-paid transit cards that they can use to take trips between stations, while admin users can track rider statistics. Completed in group of 4 as part of a Software Design course at the University of Toronto.",
+        "img": "voyageur.png",
+        "languages": 
+        [
+            "Java"
+        ], 
+        "frameworks":
+        [
+            "JavaFX"
         ]
     }
 ]
