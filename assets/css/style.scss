@@ -258,6 +258,16 @@ section#about {
     flex-flow: row wrap;
 }
 
+.under-dev {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    text-align: center;
+    &:before{
+        white-space: pre;
+        content: "\A";
+    }
+}
+
 /**
 * Skills
 **/
