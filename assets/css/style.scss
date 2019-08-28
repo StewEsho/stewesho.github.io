@@ -1,0 +1,411 @@
+---
+---
+//The above lines are Jekyll front-matter. This allows Jekyll to automatically interpret and compile this Sass file.
+
+/**
+Font Icons: {
+    icon-doc-text
+    icon-mail-alt
+    icon-link-ext-alt
+    icon-youtube-play
+    icon-file-code
+    icon-github-squared
+    icon-linkedin-squared
+}
+**/
+
+/**
+* MIXINS + FUNCTIONS
+**/
+@mixin clip-path($data){
+    clip-path: $data; 
+}
+
+/**
+* VARIABLES
+**/
+
+
+//  Color Palette
+//PRIMARY
+$stew-blackest: rgb(27, 27, 27);
+$stew-blacker: rgb(49, 53, 51);
+$stew-black: rgb(71, 74, 72);
+$stew-beige: rgb(249, 249, 204);
+$stew-lime: rgb(119, 255, 148);
+////////
+$stew-link: rgb(252, 251, 243);
+$stew-darker-lime: rgb(60, 128, 74);
+
+//  Responsive Breakpoints
+$mobi-breakpoint: 680px;
+$tablet-breakpoint: 768px;
+$mdpi-breakpoint: 1024px;
+$hdpi-breakpoint: 1280px;
+$tv-breakpoint: 1920px;
+
+//  Other general vars
+$angled-edge--rem-offset: 3.5rem;
+
+/**
+* GENERAL
+**/
+a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: $stew-beige;
+    &:hover, &:active, &:focus {
+        text-decoration: underline;
+        text-decoration-style: solid;
+        color: white;
+    }
+} body {
+    background-color: $stew-blackest;
+    color: $stew-beige;
+} h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+} h2 {
+    font-size: 6rem;
+} section {
+    margin-bottom: 2rem;
+} p {
+    line-height: 1.7;
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+} .columns {
+    float: unset;
+}
+
+/**
+* MASTHEAD
+**/
+section#title-container{
+    background-color: $stew-black;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--rem-offset}));
+    position: relative;
+    z-index: 3; //So it appears above the nav bar
+    margin: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    #title {
+        flex: 1 0 67%;
+    } #profile-pic {
+        flex: 1 1 30%;
+    }
+}
+
+#title {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    align-content: center;
+
+    h1{ //18rem
+        font-weight: 900;
+        color: $stew-lime;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        text-shadow: 0.3rem 0.3rem 0 rgba(60, 128, 74, 1), 0.5rem 0.5rem 0.1rem rgba(25, 75, 40, 1);
+    } h2.subtitle {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+#profile-pic {
+    clip-path: polygon($angled-edge--rem-offset 100%, 0 0, 100% 0, 100% 100%);
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/**
+* nav
+**/
+
+#nav {
+    position: relative;
+    top: -$angled-edge--rem-offset;
+    margin: 0 auto;
+    padding: #{$angled-edge--rem-offset} 0 #{$angled-edge--rem-offset};
+
+    clip-path: polygon(0 calc(100% - #{$angled-edge--rem-offset}), 0 0, 100% 0, 100% 100%);
+
+    min-height: 3rem;
+    background-color: $stew-blacker;
+    
+    ul {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+
+        list-style: none;
+        li {
+            list-style: none;
+            margin: 0 0 0 2rem;
+            &:first-child{
+                margin: 0;
+            }
+        }
+    }
+}
+
+/**
+* content
+**/
+main {
+    section {
+        padding: $angled-edge--rem-offset 8rem;
+    }
+}
+
+/**
+* About
+**/
+
+section#about {
+    padding-top: 0;
+    .cta {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 96rem;
+        margin: auto;
+
+        .link {
+            background-color: transparent;
+            color: $stew-beige;
+            border: 0.3rem solid $stew-beige;
+            transition: background-color 0.25s ease-out, color 0.125s ease-out;
+            &:hover {
+                background-color: $stew-beige;
+                color: $stew-blackest;
+            }
+
+            display: block;
+            text-decoration: none;
+            flex-basis: 22.5%;
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: bold;
+            padding: 1rem 0.4rem;
+            margin-right: 0.8rem;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/**
+* Projects
+**/
+#projects{
+    background-color: $stew-blacker;
+    clip-path: polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% calc(100% - #{$angled-edge--rem-offset}));
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex-basis: 48%;
+    margin-top: 4rem;
+    .title {
+        margin-bottom: 1.6rem;
+        font-size: 4.2rem;
+    }
+    .two-row {
+        display: flex;
+        flex-flow: row nowrap;
+        .description, .project-skills {
+            margin: 1rem;
+        } 
+        .description {
+            flex-basis: 60%;
+        } .project-skills {
+            flex-basis: 38%;
+        }
+    } 
+    .image {
+        display: block;
+        margin: 0 0 1rem;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .cta {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        a {
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+.project-skills {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.under-dev {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    text-align: center;
+    &:before{
+        white-space: pre;
+        content: "\A";
+    }
+}
+/**
+* Skills
+**/
+.skill {
+    margin: 0.2rem;
+
+    flex-basis: content;
+    list-style: none;
+    display: block;
+    line-height: 1;
+    color: $stew-beige;
+    border: 0.2rem solid $stew-beige;
+    padding: 0.4rem 1rem;
+    &.language {
+        background-color: $stew-beige;
+        color: $stew-blackest;
+    }
+}
+
+.skills-container {
+    .skill{
+        margin-bottom: 0.8rem;
+    }
+}
+
+.languages {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    ul {
+        flex-basis: calc(#{(100% / 6)} - 1rem);
+    }
+}
+
+.auxillaries {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 68rem;
+    margin: auto;
+}
+
+@media screen and (max-width: $hdpi-breakpoint){
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: $mdpi-breakpoint){
+    #title-container{
+        .subtitle {
+            font-size: 4.5rem;   
+        }
+    }
+
+    main {
+        section {
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
+        }
+    }
+
+    section#about {
+        .cta {
+            .link {
+                font-size: 1.8rem;
+                flex: 2 0 34vw; //grows such that there are two per row
+                &, &:last-child{
+                    margin: 0 0.4rem 0.8rem;
+                }
+            }
+        }
+    }
+
+    .project{
+        .title {
+            font-size: 3.2rem;
+        }
+
+        .two-row{
+            display: block;
+            .description, .project-skills {
+                flex: 2 0 100%;
+            }
+        }
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: $tablet-breakpoint){
+    .project{
+        .title {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: $mobi-breakpoint){
+    section#title-container{
+        .subtitle {
+            font-size: 3.25rem;
+        }
+
+        #profile-pic {
+            flex: 1 0 100vw;
+            clip-path: polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% 100%);
+            max-height: 37.5vh; //fallback
+            max-height: 37.5vmax;
+        }
+    }
+
+    section#about {
+        .cta{
+            .link {
+                //flex: 2 0 51% //grows such that there is one per row
+            }
+        }
+    }
+
+    .project{
+        flex: 1 0 100%;
+        .title {
+            font-size: 2.4rem;
+        }
+    }
+
+
+    
+    .skills-container {
+        .languages, .auxillaries {
+            display: block;
+        }
+    }
+}
