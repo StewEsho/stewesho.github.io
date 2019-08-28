@@ -36,7 +36,7 @@ title: Stew Esho
         This is a collection of several projects I have worked on over the years. The collection includes side projects, work projects, and school projects.
     </p>
     <div class="projects-container">
-        {% for project in site.data.projects %}
+        {% for project in site.projects %}
             <div class="project">
                 <h3>
                     {% if project.site %}
@@ -62,9 +62,9 @@ title: Stew Esho
                 
 
                 <div class="two-row">
-                    <p class="description">
-                        {{project.description}}
-                    </p>
+                    <div class="description">
+                        {{project.content | markdownify}}
+                    </div>
                     <ul class="project-skills">
                         {% for language in project.languages %}
                             <li class="language skill">

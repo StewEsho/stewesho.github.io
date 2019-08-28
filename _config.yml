@@ -1,2 +1,4 @@
 name: Stew Esho
 markdown: kramdown
+collections:
+  - projects

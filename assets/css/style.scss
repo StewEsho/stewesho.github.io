@@ -69,6 +69,7 @@ a {
 } p {
     line-height: 1.7;
     font-size: 1.8rem;
+    margin-bottom: 1.4rem;
 }
 
 .columns {
@@ -223,8 +224,12 @@ section#about {
         display: flex;
         flex-flow: row nowrap;
         & > * {
-            flex-basis: 48%;
             margin: 1rem;
+            &:first-child {
+                flex-basis: 60%;
+            } &:last-child {
+                flex-basis: 38%;
+            }
         } 
     } 
     .image {
@@ -266,13 +271,15 @@ section#about {
     color: $stew-beige;
     border: 0.2rem solid $stew-beige;
     padding: 0.4rem 1rem;
-
-    &.language, &.framework {
-        margin-bottom: 0.6rem;
-    }
     &.language {
         background-color: $stew-beige;
         color: $stew-blackest;
+    }
+}
+
+.skills-container {
+    .skill{
+        margin-bottom: 0.8rem;
     }
 }
 
