@@ -82,7 +82,6 @@ a {
 } .columns {
     float: unset;
 } strong {
-    color: $stew-lime;
     font-weight: 900;
 } ul {
     list-style: disclosure-closed inside;
@@ -176,10 +175,6 @@ section#title-container{
 main {
     section {
         padding: $angled-edge--rem-offset 8rem;
-
-        h2 {
-            color: $stew-lime;
-        }
     }
 }
 
@@ -285,7 +280,6 @@ section#about {
 }
 
 .under-dev {
-    color: $stew-lime;
     font-weight: lighter;
     font-size: 1.2rem;
     text-align: center;
