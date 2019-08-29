@@ -19,7 +19,10 @@ Font Icons: {
 /**
 * MIXINS + FUNCTIONS
 **/
-
+@mixin clip-path($data){
+    clip-path: $data;
+    -webkit-clip-path: $data;
+}
 
 /**
 * VARIABLES
@@ -90,7 +93,7 @@ a {
 **/
 section#title-container{
     background-color: $stew-black;
-    clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--rem-offset}));
+    @include clip-path(polygon(0 100%, 0 0, 100% 0, 100% calc(100% - #{$angled-edge--rem-offset})));
     position: relative;
     z-index: 3; //So it appears above the nav bar
     margin: 0;
@@ -126,7 +129,7 @@ section#title-container{
 }
 
 #profile-pic {
-    clip-path: polygon($angled-edge--rem-offset 100%, 0 0, 100% 0, 100% 100%);
+    @include clip-path(polygon($angled-edge--rem-offset 100%, 0 0, 100% 0, 100% 100%));
     overflow: hidden;
     img {
         width: 100%;
@@ -144,7 +147,7 @@ section#title-container{
     margin: 0 auto;
     padding: #{$angled-edge--rem-offset} 0 #{$angled-edge--rem-offset};
 
-    clip-path: polygon(0 calc(100% - #{$angled-edge--rem-offset}), 0 0, 100% 0, 100% 100%);
+    @include clip-path(polygon(0 calc(100% - #{$angled-edge--rem-offset}), 0 0, 100% 0, 100% 100%));
 
     min-height: 3rem;
     background-color: $stew-blacker;
@@ -224,7 +227,7 @@ section#about {
 **/
 #projects{
     background-color: $stew-blacker;
-    clip-path: polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% calc(100% - #{$angled-edge--rem-offset}));
+    @include clip-path(polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% calc(100% - #{$angled-edge--rem-offset})));
 }
 
 .projects-container {
@@ -324,10 +327,11 @@ section#about {
     flex-flow: row nowrap;
     justify-content: space-around;
     .language.skill {
-        padding-bottom: 1.25rem;
-        margin-bottom: 1.75rem;
+        padding-bottom: 2rem;
         text-align: center;
         font-weight: bold;
+        //downwards arrow
+        @include clip-path(polygon(100% 0, 100% calc(100% - 1.5rem), 60% calc(100% - 1.5rem), 50% 100%, 40% calc(100% - 1.5rem), 0 calc(100% - 1.5rem), 0 0));
     }
     ul {
         flex-basis: calc(#{(100% / 7)} - 1.25rem);
@@ -404,7 +408,7 @@ section#about {
 
         #profile-pic {
             flex: 1 0 100vw;
-            clip-path: polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% 100%);
+            @include clip-path(polygon(0 100%, 0 0, 100% $angled-edge--rem-offset, 100% 100%));
             max-height: 37.5vh; //fallback
             max-height: 37.5vmax;
         }
