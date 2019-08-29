@@ -24,20 +24,24 @@ Font Icons: {
     -webkit-clip-path: $data;
 }
 
+
+
 /**
 * VARIABLES
 **/
 
 //  Color Palette
 //PRIMARY
-$stew-blackest: rgb(27, 27, 27);
-$stew-blacker: rgb(49, 53, 51);
-$stew-black: rgb(71, 74, 72);
-// $stew-beige: rgb(249, 249, 204);
-$stew-beige: rgb(217, 226, 217);
-$stew-lime: rgb(119, 255, 148);
+$stew-blackest: rgb(18, 18, 18);
+$stew-blacker: rgb(30, 30, 30);
+$stew-black: rgb(50, 50, 50);
+// $stew-text: rgb(249, 249, 204);
+// $stew-text: hsl(157, 15%, 85%);
+// $stew-text: rgba(211, 222, 218, 0.85);
+$stew-text: rgb(182, 192, 188);
+$stew-lime: rgb(28, 190, 128);
 ////////
-$stew-link: rgb(234, 243, 233);
+$stew-link: $stew-text;
 $stew-link-hover: rgb(149, 212, 145);
 $stew-darker-lime: rgb(60, 128, 74);
 
@@ -66,7 +70,9 @@ a {
     }
 } body {
     background-color: $stew-blackest;
-    color: $stew-beige;
+    color: $stew-text;
+
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 } h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -194,11 +200,11 @@ section#about {
 
         .link {
             background-color: transparent;
-            color: $stew-beige;
-            border: 0.3rem solid $stew-beige;
+            color: $stew-text;
+            border: 0.3rem solid $stew-text;
             transition: background-color 0.25s ease-out, color 0.125s ease-out;
             &:hover {
-                background-color: $stew-beige;
+                background-color: $stew-text;
                 color: $stew-blackest;
             }
 
@@ -296,11 +302,11 @@ section#about {
     list-style: none;
     display: block;
     line-height: 1;
-    color: $stew-beige;
-    border: 0.2rem solid $stew-beige;
+    color: $stew-text;
+    border: 0.2rem solid $stew-text;
     padding: 0.4rem 1rem;
     &.language {
-        background-color: $stew-beige;
+        background-color: $stew-text;
         color: $stew-blackest;
     }
 }
@@ -325,14 +331,17 @@ section#about {
         font-weight: bold;
         position: relative;
         margin-bottom: 2.5rem;
+        border: none;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
         //downwards arrow
         &:after {
             content: '\020';
             position: absolute;
-            border: 2rem solid transparent;
-            border-top: 2rem solid $stew-beige;
+            border: 1rem solid transparent;
+            border-top: 1rem solid $stew-text;
             top: 100%;
-            left: calc(50% - 2rem);
+            left: calc(50% - 1rem);
             z-index: 10;
             padding: 0;
             margin:0;
