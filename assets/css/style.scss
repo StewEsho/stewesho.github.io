@@ -314,12 +314,23 @@ section#about {
     }
 }
 
+.skills-header{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
 .languages {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    .language.skill {
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.75rem;
+        text-align: center;
+        font-weight: bold;
+    }
     ul {
-        flex-basis: calc(#{(100% / 6)} - 1rem);
+        flex-basis: calc(#{(100% / 7)} - 1.25rem);
     }
 }
 
