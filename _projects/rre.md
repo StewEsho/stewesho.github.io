@@ -8,6 +8,7 @@ languages:
 frameworks:
     - Unity3D
 ---
-Educational multiplayer puzzle video game, designed to teach *optics* to high school students. 
-
-Completed for research at the University of Toronto. Play-test data (from a collection of testers that included current high-school students) was analyzed to conclude the optimal *educational* game design elements.
++ Educational multiplayer puzzle video game.
++ Designed to teach **optics** to high school students. 
++ Completed for research at the **University of Toronto**. 
++ Play-test data (from a collection of testers that included current high-school students) was analyzed to conclude the optimal **educational game design** elements.

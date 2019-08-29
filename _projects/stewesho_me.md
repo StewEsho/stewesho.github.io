@@ -13,4 +13,5 @@ frameworks:
     - Jekyll
     - jQuery
 ---
-That's the site you're on right now! It is hosted on GitHub Pages and uses the Jekyll static-site templating engine.
++ That's the site you're on right now! 
++ Hosted on **GitHub Pages** using the **Jekyll** static-site templating engine.

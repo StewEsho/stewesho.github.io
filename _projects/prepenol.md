@@ -9,6 +9,7 @@ languages:
 frameworks:
     - Corona SDK
 ---
-Shoot-em' up game for Android devices. Developed completely from scratch in Corona SDK, and is <a href="https://play.google.com/store/apps/details?id=com.stewesho.Prepenol">available on the Google Play Store</a>. 
-
-Player uses on-screen controls to guide their spaceship through the level, collecting powerups and shooting an endless guantlet of different enemies. 
++ Shoot-em' up game for Android devices. 
++ Developed completely from scratch in Corona SDK.
++ Player uses on-screen controls to guide spaceship through space, collect powerups, and shoot an endless guantlet of enemies.
++ <a href="https://play.google.com/store/apps/details?id=com.stewesho.Prepenol">Available on the Google Play Store.</a>

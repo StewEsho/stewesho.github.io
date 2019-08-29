@@ -4,27 +4,26 @@
 
 /**
 Font Icons: {
-    icon-doc-text
-    icon-mail-alt
-    icon-link-ext-alt
-    icon-youtube-play
-    icon-file-code
-    icon-github-squared
-    icon-linkedin-squared
+    
+    //  Icons
+    $icon-doc:      icon-doc-text;
+    $icon-email:    icon-mail-alt;
+    $icon-link:     icon-link-ext-alt;
+    $icon-youtube:  icon-youtube-play;
+    $icon-code:     icon-file-code;
+    $icon-github:   icon-github-squared;
+    $icon-linkedin: icon-linkedin-squared;
 }
 **/
 
 /**
 * MIXINS + FUNCTIONS
 **/
-@mixin clip-path($data){
-    clip-path: $data; 
-}
+
 
 /**
 * VARIABLES
 **/
-
 
 //  Color Palette
 //PRIMARY
@@ -53,7 +52,7 @@ $angled-edge--rem-offset: 3.5rem;
 **/
 a {
     text-decoration: underline;
-    text-decoration-style: dotted;
+    text-decoration-style: dashed;
     color: $stew-beige;
     &:hover, &:active, &:focus {
         text-decoration: underline;
@@ -80,6 +79,8 @@ a {
 } strong {
     color: $stew-lime;
     font-weight: 900;
+} ul {
+    list-style: disclosure-closed inside;
 }
 
 /**
@@ -272,13 +273,12 @@ section#about {
 }
 
 .under-dev {
+    color: $stew-lime;
     font-weight: lighter;
     font-size: 1.2rem;
     text-align: center;
-    &:before{
-        white-space: pre;
-        content: "\A";
-    }
+    line-height: 1;
+    font-style: oblique;
 }
 /**
 * Skills

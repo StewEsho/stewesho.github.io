@@ -11,7 +11,8 @@ frameworks:
     - Flask
     - MongoDB
 ---
-Web-app that generates a radial tournament bracket. Frontend is created in React, and backend API is created using Flask and MongoDB. 
-<span class="under-dev"> *Under development, details subject to changes* </span>
-
-User may input custom teams, and the app will automatically seed and generate the tournament. Users can advance and relegate teams within their bracket, and tournament brackets can be saved to the app database.
+<p class="under-dev">Under development, details subject to changes</p>
++ Web-app generates a radial tournament bracket.
++ User can input custom teams, and the app will automatically seed and generate the tournament. 
+    + Users can advance and relegate teams within their bracket.
+    + Tournament brackets can be saved to the app database.

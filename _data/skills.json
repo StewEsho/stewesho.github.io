@@ -9,16 +9,21 @@
                 "React"
             ]
         }, {
-            "name": "Java",
-            "frameworks": [
-                "Native Android SDK",
-                "libGDX",
-                "JavaFX"
-            ]
-        }, {
             "name": "C#",
             "frameworks": [
                 "Unity3D"
+            ]
+        }, {
+           "name": "PHP",
+           "frameworks": [
+               "WordPress",
+               "Laravel"
+           ] 
+        }, {
+            "name": "HTML5, CSS3",
+            "frameworks": [
+                "SASS",
+                "Jekyll"
             ]
         }, {
             "name": "Python",
@@ -26,17 +31,18 @@
                 "Flask",
                 "PIL / Pillow"
             ]
-        },  {
+        }, {
+            "name": "Java",
+            "frameworks": [
+                "Native Android SDK",
+                "libGDX",
+                "JavaFX"
+            ]
+        }, {
             "name": "Lua",
             "frameworks": [
                 "LOVE2D",
                 "Corona SDK"
-            ]
-        }, {
-            "name": "HTML5, CSS3",
-            "frameworks": [
-                "SASS",
-                "Jekyll"
             ]
         }
     ], "auxillaries": [
