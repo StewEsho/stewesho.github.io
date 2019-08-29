@@ -31,10 +31,11 @@ $stew-blackest: rgb(27, 27, 27);
 $stew-blacker: rgb(49, 53, 51);
 $stew-black: rgb(71, 74, 72);
 // $stew-beige: rgb(249, 249, 204);
-$stew-beige: rgb(247, 247, 240);
+$stew-beige: rgb(217, 226, 217);
 $stew-lime: rgb(119, 255, 148);
 ////////
-$stew-link: rgb(252, 251, 243);
+$stew-link: rgb(234, 243, 233);
+$stew-link-hover: rgb(149, 212, 145);
 $stew-darker-lime: rgb(60, 128, 74);
 
 //  Responsive Breakpoints
@@ -53,11 +54,12 @@ $angled-edge--rem-offset: 3.5rem;
 a {
     text-decoration: underline;
     text-decoration-style: dashed;
-    color: $stew-beige;
+    color: $stew-link;
+    transition: color 0.25s ease-out, text-decoration 0.5s ease-out;
     &:hover, &:active, &:focus {
         text-decoration: underline;
         text-decoration-style: solid;
-        color: white;
+        color: $stew-link-hover;
     }
 } body {
     background-color: $stew-blackest;
@@ -171,6 +173,10 @@ section#title-container{
 main {
     section {
         padding: $angled-edge--rem-offset 8rem;
+
+        h2 {
+            color: $stew-lime;
+        }
     }
 }
 
@@ -234,18 +240,6 @@ section#about {
         margin-bottom: 1.6rem;
         font-size: 4.2rem;
     }
-    .two-row {
-        display: flex;
-        flex-flow: row nowrap;
-        .description, .project-skills {
-            margin: 1rem;
-        } 
-        .description {
-            flex-basis: 60%;
-        } .project-skills {
-            flex-basis: 38%;
-        }
-    } 
     .image {
         display: block;
         margin: 0 0 1rem;
@@ -260,9 +254,24 @@ section#about {
         flex-flow: row wrap;
         justify-content: center;
         a {
+            flex: 1 1 calc(50% - 1.2rem);
+            text-align: center;
+            font-size: 2.2rem;
             margin: 0 0.5rem;
         }
     }
+    .two-row {
+        display: flex;
+        flex-flow: row nowrap;
+        .description, .project-skills {
+            margin: 1rem;
+        } 
+        .description {
+            flex-basis: 60%;
+        } .project-skills {
+            flex-basis: 38%;
+        }
+    } 
 }
 
 .project-skills {
