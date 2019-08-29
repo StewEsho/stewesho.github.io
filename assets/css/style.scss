@@ -327,11 +327,25 @@ section#about {
     flex-flow: row nowrap;
     justify-content: space-around;
     .language.skill {
-        padding-bottom: 2rem;
         text-align: center;
         font-weight: bold;
+        position: relative;
+        margin-bottom: 2.5rem;
         //downwards arrow
-        @include clip-path(polygon(100% 0, 100% calc(100% - 1.5rem), 60% calc(100% - 1.5rem), 50% 100%, 40% calc(100% - 1.5rem), 0 calc(100% - 1.5rem), 0 0));
+        &:after {
+            content: '\020';
+            position: absolute;
+            border: 2rem solid transparent;
+            border-top: 2rem solid $stew-beige;
+            top: 100%;
+            left: calc(50% - 2rem);
+            z-index: 10;
+            padding: 0;
+            margin:0;
+            width: 0;
+            height: 0;
+        }
+        // @include clip-path(polygon(100% 0, 100% calc(100% - 1.5rem), 60% calc(100% - 1.5rem), 50% 100%, 40% calc(100% - 1.5rem), 0 calc(100% - 1.5rem), 0 0));
     }
     ul {
         flex-basis: calc(#{(100% / 7)} - 1.25rem);
