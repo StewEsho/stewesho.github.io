@@ -9,7 +9,7 @@ languages:
 frameworks:
     - React
     - Flask
-    - MongoDB
+    - SQLite
 ---
 <p class="under-dev">Under development, details subject to changes</p>
 + Web-app generates a radial tournament bracket.
