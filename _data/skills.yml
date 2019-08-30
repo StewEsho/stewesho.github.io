@@ -38,13 +38,14 @@
                 "libGDX",
                 "JavaFX"
             ]
-        }, {
-            "name": "Lua",
-            "frameworks": [
-                "LOVE2D",
-                "Corona SDK"
-            ]
-        }
+        }, 
+        #  {
+        #      "name": "Lua",
+        #      "frameworks": [
+        #          "LOVE2D",
+        #          "Corona SDK"
+        #      ]
+        #  }
     ], "auxillaries": [
         "Desktop Game Development",
         "Mobile Game Development",
