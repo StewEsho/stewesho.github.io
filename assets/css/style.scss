@@ -4,7 +4,6 @@
 
 /**
 Font Icons: {
-    
     //  Icons
     $icon-doc:      icon-doc-text;
     $icon-email:    icon-mail-alt;
@@ -42,7 +41,7 @@ $stew-text: rgb(182, 192, 188);
 $stew-lime: rgb(28, 190, 128);
 ////////
 $stew-link: $stew-text;
-$stew-link-hover: rgb(149, 212, 145);
+$stew-link-hover: $stew-lime;
 $stew-darker-lime: rgb(60, 128, 74);
 
 //  Responsive Breakpoints
@@ -59,13 +58,12 @@ $angled-edge--rem-offset: 3.5rem;
 * GENERAL
 **/
 a {
-    text-decoration: underline;
-    text-decoration-style: dashed;
+    text-decoration: none;
+    font-weight: bold;
     color: $stew-link;
     transition: color 0.25s ease-out, text-decoration 0.5s ease-out;
     &:hover, &:active, &:focus {
         text-decoration: underline;
-        text-decoration-style: solid;
         color: $stew-link-hover;
     }
 } body {
