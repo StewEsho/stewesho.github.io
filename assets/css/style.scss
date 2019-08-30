@@ -262,24 +262,25 @@ section#about {
             margin: 0 0.5rem;
         }
     }
-    .two-row {
-        display: flex;
-        flex-flow: row nowrap;
-        .description, .project-skills {
-            margin: 1rem;
-        } 
-        .description {
-            flex-basis: 60%;
-        } .project-skills {
-            flex-basis: 38%;
-        }
-    } 
+    // .two-row {
+    //     display: flex;
+    //     flex-flow: row nowrap;
+    //     .description, .project-skills {
+    //         margin: 1rem;
+    //     } 
+    //     .description {
+    //         flex-basis: 60%;
+    //     } .project-skills {
+    //         flex-basis: 38%;
+    //     }
+    // } 
 }
 
 .project-skills {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
+    justify-content: center;
     flex-flow: row wrap;
 }
 

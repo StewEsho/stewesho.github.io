@@ -61,24 +61,23 @@ title: Stew Esho
                     </figcaption>
                 </figure>
                 
+                <ul class="project-skills">
+                    {% for language in project.languages %}
+                        <li class="language skill">
+                            {{language}}
+                        </li>
+                    {% endfor %}
+                    {% for framework in project.frameworks %}
+                        <li class="framework skill">
+                            {{framework}}
+                        </li>
+                    {% endfor %}
+                </ul>
 
-                <div class="two-row">
-                    <div class="description">
-                        {{project.content | markdownify}}
-                    </div>
-                    <ul class="project-skills">
-                        {% for language in project.languages %}
-                            <li class="language skill">
-                                {{language}}
-                            </li>
-                        {% endfor %}
-                        {% for framework in project.frameworks %}
-                            <li class="framework skill">
-                                {{framework}}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>                
+
+                <div class="description">
+                    {{project.content | markdownify}}
+                </div>             
             </div>
         {% endfor %}
     </div>

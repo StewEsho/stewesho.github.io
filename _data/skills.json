@@ -46,8 +46,10 @@
             ]
         }
     ], "auxillaries": [
-        "Desktop Game Development", 
+        "Desktop Game Development",
+        "Mobile Game Development",
         "Web App Development", 
+        "Native App Development",
         "Database Management", 
         "Responsive Front-End Web Design", 
         "CLI Scripts"
