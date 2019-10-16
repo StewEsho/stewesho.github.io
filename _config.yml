@@ -9,9 +9,9 @@ collections:
       # just use as reference.
       - rre.md                # 10
       - radial.md             # 20
-      - slymes.md             # 30
-      - reso_crawler.md       # 40
-      - voyageur.md           # 50
+      - reso_crawler.md       # 30
+      - voyageur.md           # 40
+      - slymes.md             # 50
       - galactic_cuisine.md   # 60
       - prepenol.md           # 70
       - stewesho_me.md        # 80

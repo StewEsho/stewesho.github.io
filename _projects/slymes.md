@@ -1,6 +1,6 @@
 ---
 title: Slymes
-order_num: 30
+order_num: 50
 img: slymes.png
 site: https://store.steampowered.com/app/530300/Slymes/
 languages:

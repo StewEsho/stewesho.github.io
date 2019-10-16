@@ -1,6 +1,6 @@
 ---
 title: Reso Crawler
-order_num: 40
+order_num: 30
 img: reso_crawler.png
 repo: https://github.com/StewEsho/LudumDare42
 site: https://ldjam.com/events/ludum-dare/42/reso-crawler
