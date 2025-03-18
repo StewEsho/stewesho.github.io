@@ -1,5 +1,5 @@
 ---
-title: stewesho.me
+title: stewesho.com
 order_num: 80
 img: site.png
 repo: https://github.com/StewEsho/stewesho.github.io
