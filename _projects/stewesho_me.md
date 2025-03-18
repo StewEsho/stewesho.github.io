@@ -3,7 +3,7 @@ title: stewesho.me
 order_num: 80
 img: site.png
 repo: https://github.com/StewEsho/stewesho.github.io
-site: http://stewesho.me
+site: http://stewesho.com
 languages:
     - HTML5
     - Sass

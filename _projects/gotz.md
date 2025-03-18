@@ -2,7 +2,7 @@
 title: Guardian of the 'Za
 order_num: 9
 img: gotz.png
-repo: https://shockwire.itch.io/csc404 
+site: https://shockwire.itch.io/csc404 
 languages:
     - C#
 frameworks:
