@@ -1,58 +1,36 @@
 {
     "languages": [
         {
-            "name": "Javascript",
+            "name": "C++",
             "frameworks": [
-                "jQuery",
-                "Node.js",
-                "Express.js",
-                "React"
+                "Vulkan API",
+                "GLSL",
+                "raylib"
             ]
         }, {
             "name": "C#",
             "frameworks": [
-                "Unity3D"
+                "Unity3D",
+                "Godot"
             ]
         }, {
-           "name": "PHP",
-           "frameworks": [
-               "WordPress",
-               "Laravel"
-           ] 
-        }, {
-            "name": "HTML5, CSS3",
+            "name": "HTML5 + CSS3 + Javascript",
             "frameworks": [
                 "SASS",
-                "Jekyll"
+                "Jekyll",
+                "jQuery",
+                "React"
             ]
         }, {
             "name": "Python",
-            "frameworks": [
-                "Flask",
-                "PIL / Pillow"
-            ]
-        }, {
-            "name": "Java",
-            "frameworks": [
-                "Native Android SDK",
-                "libGDX",
-                "JavaFX"
-            ]
-        }, 
-        #  {
-        #      "name": "Lua",
-        #      "frameworks": [
-        #          "LOVE2D",
-        #          "Corona SDK"
-        #      ]
-        #  }
+            "frameworks": []
+        }
     ], "auxillaries": [
         "Desktop Game Development",
         "Mobile Game Development",
+        "Game Engine Development",
+        "Graphics Programming",
         "Web App Development", 
-        "Native App Development",
-        "Database Management", 
-        "Responsive Front-End Web Design", 
-        "CLI Scripts"
+        "Responsive Front-End Web Design"
     ]
 }
