@@ -2,7 +2,8 @@
 title: Pitch Perfect
 order_num: 8
 img: pitch_perfect.png
-site: https://shockwire.itch.io/pitch-perfect 
+site: https://shockwire.itch.io/pitch-perfect
+repo: https://github.com/StewEsho/PitchPerfect
 languages:
     - GDScript
 frameworks:

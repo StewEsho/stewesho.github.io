@@ -2,7 +2,8 @@
 title: Guardian of the 'Za
 order_num: 9
 img: gotz.png
-site: https://shockwire.itch.io/csc404 
+site: https://shockwire.itch.io/csc404
+repo: https://github.com/CSC404-GuardiansOfTheZa/GameJam
 languages:
     - C#
 frameworks:
