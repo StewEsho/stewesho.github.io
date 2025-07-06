@@ -9,6 +9,8 @@ languages:
 frameworks:
     - Unity3D
 ---
-+ Rhythm-based "platformer" where you don't play as the platforming character. Rather, you're a guardian angel protecting a pizza delivery guy as he hops through the streets of Toronto
-+ Developed in Unity, and avaiable to play on web!
-+ Created by team of 10 as a course project for CSC404 (Winter 2022) at the University of Toronto
++ Rhythm-based “pseudo-platformer” where you don’t control the character, but the environment around him. 
++ As a guardian angel, protect a pizza delivery guy dancing to music by activating traps to the beat of the music
++ Capstone project at the University of Toronto (CSC404, Winter 2022)
++ Led team of 10 students during development by designing game, delegating work, and running team sprints
++ Wrote gameplay code in C# using Unity Engine. Final game build available to play on itch.io
