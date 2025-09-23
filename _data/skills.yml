@@ -10,8 +10,7 @@
         }, {
             "name": "C#",
             "frameworks": [
-                "Unity3D",
-                "Godot"
+                "Unity3D"
             ]
         }, {
             "name": "HTML5 + CSS3 + Javascript",
@@ -24,6 +23,11 @@
         }, {
             "name": "Python",
             "frameworks": []
+        }, {
+            "name": "GDScript",
+            "frameworks": [
+                "Godot"
+            ]
         }
     ], "auxillaries": [
         "Desktop Game Development",
